@@ -1,0 +1,7 @@
+# robots.txt İHS Telekom tarafından oluşturuldu
+User-agent: Googlebot
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://cicekci.site/sitemap.xml
