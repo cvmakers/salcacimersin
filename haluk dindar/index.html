@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haluk Dindar | Hayat Medikal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #07141a;
+      --bg-dark-2: #0e252d;
+      --mint: #dff6ef;
+      --mint-2: #bfe9dd;
+      --primary: #14967d;
+      --primary-dark: #0d6b59;
+      --text-dark: #13232a;
+      --text-soft: #5a6b72;
+      --white: #ffffff;
+      --mail: #198cff;
+      --insta-a: #fd5949;
+      --insta-b: #d6249f;
+      --wa: #22c55e;
+      --map: #ffcb2f;
+      --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.28);
+      --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.12);
+      --radius-xl: 30px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(circle at top left, rgba(34, 197, 94, 0.12), transparent 25%),
+        radial-gradient(circle at top right, rgba(20, 150, 125, 0.16), transparent 28%),
+        linear-gradient(155deg, var(--bg-dark), var(--bg-dark-2));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 28px 16px;
+    }
+
+    .digital-card-wrap {
+      width: 100%;
+      max-width: 460px;
+      position: relative;
+    }
+
+    .digital-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(230, 250, 244, 0.98), rgba(214, 244, 235, 0.95));
+      border: 1px solid rgba(255,255,255,0.75);
+      box-shadow: var(--shadow-xl), 0 0 0 1px rgba(255,255,255,0.08), 0 0 40px rgba(98, 255, 210, 0.12);
+      backdrop-filter: blur(12px);
+    }
+
+    .digital-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(255,255,255,0.75), transparent 26%),
+        radial-gradient(circle at 100% 0%, rgba(45, 212, 191, 0.18), transparent 24%);
+      pointer-events: none;
+    }
+
+    .card-top {
+      position: relative;
+      padding: 26px 22px 18px;
+      background: linear-gradient(135deg, rgba(14, 37, 45, 0.98), rgba(19, 76, 79, 0.92));
+      border-bottom-left-radius: 28px;
+      border-bottom-right-radius: 28px;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,0.08);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .brand-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.92);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      backdrop-filter: blur(6px);
+    }
+
+    .brand-chip i {
+      color: #77f3d3;
+    }
+
+    .profile-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .profile-image {
+      width: 148px;
+      height: 78px;
+      border-radius: 22px;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.9);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+      background: #fff;
+    }
+
+    .profile-meta {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name {
+      margin: 0;
+      font-size: clamp(1.9rem, 5vw, 2.5rem);
+      line-height: 1.05;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: 0.2px;
+    }
+
+    .role {
+      margin: 8px 0 0;
+      color: rgba(255,255,255,0.82);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .card-body-custom {
+      position: relative;
+      padding: 22px;
+    }
+
+    .intro-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(18, 86, 72, 0.09);
+      box-shadow: var(--shadow-md);
+      border-radius: 20px;
+      padding: 14px 16px;
+      margin-top: -42px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .intro-title {
+      color: var(--text-dark);
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .intro-sub {
+      color: var(--text-soft);
+      font-size: 0.9rem;
+      margin: 4px 0 0;
+    }
+
+    .status-badge {
+      white-space: nowrap;
+      background: #e9fff4;
+      color: var(--primary-dark);
+      border: 1px solid rgba(34, 197, 94, 0.18);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-dark);
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 22px 0 14px;
+    }
+
+    .section-title i {
+      color: var(--primary);
+    }
+
+    .action-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .action-btn {
+      text-decoration: none;
+      min-height: 66px;
+      border-radius: var(--radius-md);
+      padding: 14px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-weight: 700;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      width: 100%;
+    }
+
+    .action-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.16), transparent 50%);
+      pointer-events: none;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+      opacity: 0.98;
+      color: var(--white);
+    }
+
+    .action-btn.dark-text,
+    .action-btn.dark-text:hover {
+      color: #1c1c1c;
+    }
+
+    .action-btn i {
+      width: 18px;
+      font-size: 1.12rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .action-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      line-height: 1.1;
+    }
+
+    .action-label {
+      font-size: 0.98rem;
+      font-weight: 800;
+    }
+
+    .action-sub {
+      font-size: 0.76rem;
+      opacity: 0.9;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .mail-btn { background: linear-gradient(135deg, #2392ff, #0b63f3); }
+    .insta-btn { background: linear-gradient(135deg, var(--insta-a), var(--insta-b)); }
+    .wp-btn { background: linear-gradient(135deg, #2ed573, #16a34a); }
+    .map-btn { background: linear-gradient(135deg, #ffd65c, #ffbf00); }
+    .save-btn { background: linear-gradient(135deg, #1f9f8b, #127260); }
+    .qr-btn { background: linear-gradient(135deg, #203640, #0f1f27); }
+
+    .info-card {
+      margin-top: 16px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(18, 86, 72, 0.08);
+      box-shadow: var(--shadow-md);
+      padding: 18px;
+    }
+
+    .info-line {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--text-dark);
+    }
+
+    .info-line i {
+      color: var(--primary);
+      margin-top: 4px;
+    }
+
+    .info-line strong {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 3px;
+    }
+
+    .info-line span {
+      color: var(--text-soft);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .qr-panel {
+      display: none;
+      margin-top: 16px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(18, 86, 72, 0.08);
+      box-shadow: var(--shadow-md);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .qr-panel.active {
+      display: block;
+      animation: fadeIn 0.28s ease;
+    }
+
+    .qr-frame {
+      background: #fff;
+      border-radius: 24px;
+      padding: 14px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+      display: inline-block;
+    }
+
+    .qr-image {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .qr-note {
+      margin: 14px 0 0;
+      color: var(--text-soft);
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    .footer-mini {
+      text-align: center;
+      color: #5d737a;
+      margin-top: 18px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 575px) {
+      .digital-card-wrap {
+        max-width: 100%;
+      }
+
+      .card-top {
+        padding: 22px 18px 18px;
+      }
+
+      .card-body-custom {
+        padding: 18px;
+      }
+
+      .profile-row {
+        align-items: center;
+      }
+
+      .profile-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 18px;
+      }
+
+      .action-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .status-badge {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="digital-card-wrap">
+    <section class="digital-card">
+      <div class="card-top">
+        <div class="brand-row">
+          <div class="brand-chip">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Hayat Medikal</span>
+          </div>
+
+          <div class="brand-chip">
+            <i class="fa-solid fa-id-card"></i>
+            <span>Dijital Kart</span>
+          </div>
+        </div>
+
+        <div class="profile-row">
+          <img class="profile-image" src="HAYAT MEDİKAL LOGO.jpg.jpeg" alt="Haluk Dindar profil görseli">
+
+          <div class="profile-meta">
+            <h1 class="name">Haluk Dindar</h1>
+            <p class="role">Hayat Medikal • İletişim Kartı</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body-custom">
+        <div class="section-title">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Hızlı Erişim</span>
+        </div>
+
+        <div class="action-grid">
+          <a class="action-btn mail-btn" href="mailto:halukdindar@hotmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="action-content">
+              <span class="action-label">Mail Gönder</span>
+              <span class="action-sub">halukdindar@hotmail.com</span>
+            </span>
+          </a>
+
+          <a class="action-btn insta-btn" href="https://instagram.com/halukdindar" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="action-content">
+              <span class="action-label">Instagram</span>
+              <span class="action-sub">@halukdindar</span>
+            </span>
+          </a>
+
+          <a class="action-btn wp-btn" href="https://wa.me/905353375248" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="action-content">
+              <span class="action-label">WhatsApp</span>
+              <span class="action-sub">0535 337 52 48</span>
+            </span>
+          </a>
+
+          <a class="action-btn map-btn dark-text" href="https://www.google.com/maps?q=Hayat+Medikal+MERS%C4%B0N,+T%C4%B1p+Fak%C3%BCltesi+Kar%C5%9F%C4%B1s%C4%B1,+%C3%87iftlikk%C3%B6y+Mah.+Mimar+Sinan+Cad,+Mersin+%C3%9Cnv.+Paradise+Homes+Sitesi+No:24+C/F,+33150+Yeni%C5%9Fehir/Mersin&ftid=0x1527f30839c72255:0x5418ce99d72643b0&entry=gps&lucs=,94282334,94284508,94224825,94227247,94227248,94231188,94280568,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjMwLjAuNzg1NjQ2NTQ3MBgAIIgnKnUsOTQyODIzMzQsOTQyODQ1MDgsOTQyMjQ4MjUsOTQyMjcyNDcsOTQyMjcyNDgsOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsNDcwNjk1MDgsOTQyMTg2NDEsOTQyODIxMzQsOTQyMDMwMTksNDcwODQzMDRCAlRS&skid=6f9b20a2-5a9b-4b1e-be43-2b34ae81729a&g_st=iw" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="action-content">
+              <span class="action-label">Yol Tarifi Al</span>
+              <span class="action-sub">Mersin konumu aç</span>
+            </span>
+          </a>
+
+          <button class="action-btn save-btn" id="saveContactBtn" type="button">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="action-content">
+              <span class="action-label">Rehbere Kaydet</span>
+              <span class="action-sub">vCard indir</span>
+            </span>
+          </button>
+
+          <button class="action-btn qr-btn" id="toggleQrBtn" type="button">
+            <i class="fa-solid fa-qrcode"></i>
+            <span class="action-content">
+              <span class="action-label">WeChat QR</span>
+              <span class="action-sub">QR kodunu göster</span>
+            </span>
+          </button>
+        <a class="action-btn" style="background: linear-gradient(135deg,#09b83e,#057a2a);" href="https://u.wechat.com/kCq5J--I2t7vJJeuy1lSr9c?s=3" target="_blank">
+            <i class="fa-brands fa-weixin"></i>
+            <span class="action-content">
+              <span class="action-label">WeChat</span>
+              <span class="action-sub">Profili aç</span>
+            </span>
+          </a>
+
+        </div>
+
+        <div class="info-card">
+          <div class="info-line">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Adres</strong>
+              <span>Hayat Medikal Mersin, Tıp Fakültesi Karşısı, Çiftlikköy Mah. Mimar Sinan Cad, Mersin Ünv. Paradise Homes Sitesi No:24 C/F, 33150 Yenişehir / Mersin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-panel" id="qrPanel">
+          <div class="section-title mt-0 justify-content-center">
+            <i class="fa-solid fa-qrcode"></i>
+            <span>QR Kod</span>
+          </div>
+
+          <div class="qr-frame">
+            <img class="qr-image" src="WhatsApp Image 2026-03-24 at 23.30.11.jpeg" alt="Haluk Dindar QR Kod">
+          </div>
+
+          <p class="qr-note">Beni arkadaş olarak eklemek için QR kodunu tarayın.</p>
+        </div>
+
+        <div class="footer-mini">Hayat Medikal • Profesyonel Dijital Kartvizit</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const qrPanel = document.getElementById('qrPanel');
+    const toggleQrBtn = document.getElementById('toggleQrBtn');
+    const saveContactBtn = document.getElementById('saveContactBtn');
+
+    toggleQrBtn.addEventListener('click', function () {
+      qrPanel.classList.toggle('active');
+      if (qrPanel.classList.contains('active')) {
+        qrPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+
+    saveContactBtn.addEventListener('click', function () {
+      const vcard = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'FN:Haluk Dindar',
+        'ORG:Hayat Medikal',
+        'TITLE:İletişim Kartı',
+        'TEL;TYPE=CELL:+905353375248',
+        'EMAIL;TYPE=INTERNET:halukdindar@hotmail.com',
+        'URL:https://instagram.com/halukdindar',
+        'ADR;TYPE=WORK:;;Hayat Medikal Mersin\, Tıp Fakültesi Karşısı\, Çiftlikköy Mah. Mimar Sinan Cad\, Mersin Ünv. Paradise Homes Sitesi No:24 C/F;Yenişehir;Mersin;33150;Türkiye',
+        'NOTE:Harita bağlantısı için dijital kartı ziyaret edin.',
+        'END:VCARD'
+      ].join('\n');
+
+      const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'haluk-dindar.vcf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    });
+  </script>
+</body>
+</html>
