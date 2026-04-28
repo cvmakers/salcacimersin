@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cicekci.site/sitemap.xml
