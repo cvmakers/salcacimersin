@@ -1006,6 +1006,81 @@
                 padding: 11px 4px
             }
         }
+        .ads-hero {
+    background: linear-gradient(135deg, #0b5f34, #159447);
+    color: #fff;
+    padding: 46px 0;
+}
+
+.ads-hero-box {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.ads-hero h1 {
+    font-size: 42px;
+    font-weight: 950;
+    margin-bottom: 12px;
+}
+
+.ads-hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ecfff3;
+}
+
+.ads-hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.ads-btn {
+    padding: 15px 22px;
+    border-radius: 14px;
+    font-weight: 950;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ads-call {
+    background: #fff;
+    color: #159447 !important;
+}
+
+.ads-wa {
+    background: #20b65a;
+    color: #fff !important;
+}
+
+.ads-trust {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.ads-trust div {
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+@media(max-width:768px) {
+    .ads-hero {
+        padding: 34px 0;
+    }
+
+    .ads-hero-box {
+        grid-template-columns: 1fr;
+    }
+
+    .ads-hero h1 {
+        font-size: 30px;
+    }
+}
     </style>
 
     <script type="application/ld+json">
@@ -1070,23 +1145,35 @@
         </div>
     </nav>
 
-    <section class="breadcrumb-area">
-        <div class="container-site">
-            <div class="breadcrumb-line"><span>cicekci.site</span><i
-                    class="fa-solid fa-angle-right"></i><span>Çiçek</span><i
-                    class="fa-solid fa-angle-right"></i><strong>Mersin Çiçekçi</strong></div>
-            <h1 class="page-title">Mersin Çiçekçi Ürünleri <strong>| Yenişehir Çiçekçi Aynı Gün Teslimat</strong></h1>
-            <div class="location-strip">
-                <div class="location-box"><i class="fa-solid fa-location-dot"></i><span>Menteş, 9. Cadde No:30 Yenişehir
-                        / Mersin, Türkiye</span><i class="fa-regular fa-pen-to-square ms-auto"></i></div>
-                <div class="trust-mini">
-                    <div><i class="fa-solid fa-truck-fast"></i> Her gün aynı gün teslimat</div>
-                    <div><i class="fa-solid fa-lock"></i> Güvenli sipariş</div>
-                    <div><i class="fa-solid fa-face-smile"></i> 5.0 müşteri puanı</div>
-                </div>
+<section class="ads-hero">
+    <div class="container-site ads-hero-box">
+        <div>
+            <h1>Mersin Yenişehir Çiçekçi</h1>
+            <p>
+                Mersin çiçekçi arayanlar için aynı gün teslimat.
+                Yenişehir, Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar’a hızlı çiçek siparişi.
+            </p>
+
+            <div class="ads-hero-buttons">
+                <a href="tel:+905425716844" class="ads-btn ads-call track-call">
+                    <i class="fa-solid fa-phone"></i> Hemen Ara
+                </a>
+
+                <a href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
+                   target="_blank" class="ads-btn ads-wa track-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Sipariş
+                </a>
             </div>
         </div>
-    </section>
+
+        <div class="ads-trust">
+            <div><i class="fa-solid fa-truck-fast"></i> Aynı gün çiçek teslimatı</div>
+            <div><i class="fa-solid fa-location-dot"></i> Yenişehir merkezli hızlı servis</div>
+            <div><i class="fa-solid fa-star"></i> 5.0 müşteri puanı</div>
+            <div><i class="fa-solid fa-phone-volume"></i> Telefonla hızlı sipariş</div>
+        </div>
+    </div>
+</section>
 
     <section class="filter-row">
         <div class="container-site filters">
