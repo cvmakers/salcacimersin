@@ -4,57 +4,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Mersin Çiçekçi | Yenişehir Çiçekçi | Aynı Gün Çiçek Teslimatı</title>
+    <title>Mersin Çiçekçi | Yenişehir Çiçekçi | Meritay Botanik</title>
     <meta name="description"
-        content="Mersin çiçekçi MERİTAY BOTANİK. Yenişehir çiçekçi hizmeti, aynı gün çiçek teslimatı, gül buketi, orkide, lilyum, kutulu çiçek ve hızlı çiçek siparişi için hemen arayın.">
+        content="Mersin çiçekçi Meritay Botanik; Yenişehir, Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar çevresine aynı gün çiçek siparişi, çelenk, orkide, saksı çiçeği ve araba süsleme.">
     <meta name="keywords"
-        content="mersin çiçekçi, yenişehir çiçekçi, çiçekçi mersin, mersin yenişehir çiçekçi, çiçek siparişi mersin, en yakın çiçekçi, acil çiçekçi mersin, aynı gün çiçek teslimatı, çiçek gönder mersin, hızlı çiçek teslimatı, yakınımdaki çiçekçi, online çiçek siparişi mersin">
+        content="mersin çiçekçi, yenişehir çiçekçi, mersin çiçek siparişi, en yakın çiçekçi, yakındaki çiçekçi, acil çiçekçi mersin, pozcu çiçekçi, menteş çiçekçi, mezitli çiçekçi, akdeniz çiçekçi, toroslar çiçekçi, mersin çelenk, mersin araba süsleme, mersin orkide, mersin saksı çiçeği, açılış çelengi mersin, gül buketi mersin, meritay botanik">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#159447">
-    <link rel="canonical" href="https://cicekci.site/">
+    <meta name="theme-color" content="#18a05a">
+    <link rel="canonical" href="https://meritay.com/">
     <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="preload" as="image" href="banner.png" fetchpriority="high">
+    <link rel="preload" as="image" href="logo.png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mersin Çiçekçi | Yenişehir Çiçekçi | Aynı Gün Çiçek Teslimatı">
+    <meta property="og:title" content="Mersin Çiçekçi | Yenişehir Çiçekçi | Meritay Botanik">
     <meta property="og:description"
-        content="Mersin Yenişehir’de aynı gün çiçek teslimatı. Gül, orkide, lilyum ve özel aranjman için hızlı sipariş.">
-    <meta property="og:url" content="https://cicekci.site/">
-    <meta property="og:image" content="https://cicekci.site/logo.png">
+        content="Yenişehir merkezli Meritay Botanik; Mersin’de aynı gün çiçek siparişi, çelenk, orkide, saksı çiçeği ve araba süsleme hizmeti.">
+    <meta property="og:url" content="https://meritay.com/">
+    <meta property="og:image" content="https://meritay.com/logo.png">
 
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    <!-- GOOGLE BAĞLANTI ALANI
-  <meta name="google-site-verification" content="BURAYA_SEARCH_CONSOLE_KODU">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-    gtag('config', 'AW-XXXXXXXXXX');
-  </script>
-  -->
-
     <style>
         :root {
-            --green: #159447;
-            --green-dark: #0b5f34;
-            --green-deep: #07351f;
-            --green-soft: #effbf4;
-            --orange: #ff7a00;
-            --red: #e94b45;
-            --yellow: #ffc107;
-            --text: #1c2520;
-            --muted: #65736b;
-            --line: #e3ece6;
-            --bg: #f7faf8;
+            --green: #159c57;
+            --green-dark: #0b6c3a;
+            --pink: #d65f8c;
+            --pink-dark: #c84e7c;
+            --soft-pink: #fff3f8;
+            --text: #151f1a;
+            --muted: #69746d;
+            --line: #e8eee9;
+            --bg: #fff;
+            --soft: #f8faf9;
             --white: #fff;
-            --shadow: 0 10px 30px rgba(7, 53, 31, .08);
-            --shadow2: 0 20px 55px rgba(7, 53, 31, .12);
+            --shadow: 0 12px 32px rgba(20, 40, 30, .08);
+            --shadow2: 0 22px 60px rgba(20, 40, 30, .14);
             --radius: 18px;
         }
 
@@ -71,7 +59,7 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             color: var(--text);
-            background: var(--bg);
+            background: #fff;
             overflow-x: hidden;
             padding-bottom: 76px
         }
@@ -87,447 +75,481 @@
         }
 
         p {
-            line-height: 1.65
+            line-height: 1.6
         }
 
         .container-site {
             width: 100%;
-            max-width: 1220px;
+            max-width: 1180px;
             margin: 0 auto;
             padding: 0 18px
         }
 
-        .top-campaign {
-            background: #dff7e8;
-            color: #164b2c;
-            padding: 10px 0;
-            font-size: 14px;
-            text-align: center;
-            font-weight: 800
-        }
-
-        .topbar {
+        .mini-top {
+            height: 32px;
+            border-bottom: 1px solid var(--line);
             background: #fff;
-            border-bottom: 1px solid var(--line)
+            font-size: 12px;
+            color: #202821
         }
 
-        .topbar-inner {
-            height: 72px;
+        .mini-inner {
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 18px
         }
 
-        .brand {
+        .mini-left,
+        .mini-right {
             display: flex;
             align-items: center;
-            gap: 10px;
-            color: #0b4b90;
-            font-size: 28px;
-            font-weight: 950;
+            gap: 24px;
             white-space: nowrap
         }
 
-        .brand-mark {
-            width: 36px;
-            height: 36px;
+        .mini-top i {
+            color: #ff5b8e
+        }
+
+        .header {
+            background: #fff;
+            border-bottom: 1px solid var(--line);
+            position: sticky;
+            top: 0;
+            z-index: 9999
+        }
+
+        .header-inner {
+            height: 76px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3px;
-            transform: rotate(45deg)
+            grid-template-columns: 230px 1fr 280px;
+            gap: 22px;
+            align-items: center
         }
 
-        .brand-mark span {
-            border-radius: 12px
-        }
-
-        .brand-mark span:nth-child(1) {
-            background: #e6382e
-        }
-
-        .brand-mark span:nth-child(2) {
-            background: #1b9a4b
-        }
-
-        .brand-mark span:nth-child(3) {
-            background: #ffb000
-        }
-
-        .brand-mark span:nth-child(4) {
-            background: #1967d2
-        }
-
-        .search-wrap {
-            flex: 1;
-            max-width: 560px;
+        .brand {
             display: flex;
-            border: 2px solid var(--green);
-            border-radius: 12px;
-            overflow: hidden;
-            background: #fff
+            align-items: center;
+            gap: 11px;
+            color: var(--green);
+            font-size: 30px;
+            font-weight: 950;
+            letter-spacing: .2px;
+            line-height: .9
         }
 
-        .search-wrap input {
+        .brand small {
+            display: block;
+            color: #e45f8c;
+            font-size: 15px;
+            letter-spacing: 5px;
+            margin-top: 8px;
+            font-weight: 900
+        }
+
+        .logo-flower {
+            width: 47px;
+            height: 47px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #f95b8f, #129e57);
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-size: 26px
+        }
+
+        .search {
+            display: flex;
+            border: 1px solid #dfe8e2;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .02)
+        }
+
+        .search input {
             border: 0;
             outline: 0;
-            padding: 14px 16px;
             flex: 1;
-            font-size: 15px
+            padding: 14px 16px;
+            font-size: 14px
         }
 
-        .search-wrap button {
+        .search button {
+            width: 58px;
             border: 0;
             background: var(--green);
             color: #fff;
-            width: 58px;
-            font-size: 21px
+            font-size: 18px
         }
 
-        .top-actions {
+        .head-actions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 26px
+        }
+
+        .head-action {
             display: flex;
             align-items: center;
-            gap: 18px;
-            font-weight: 800;
-            color: #26342c
+            gap: 9px;
+            font-size: 14px
         }
 
-        .top-actions a {
+        .head-action i {
+            font-size: 25px;
+            color: #202020
+        }
+
+        .cart-icon {
+            position: relative
+        }
+
+        .cart-count {
+            position: absolute;
+            right: -7px;
+            top: -9px;
+            background: #ff5b8e;
+            color: #fff;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            font-size: 11px;
+            display: grid;
+            place-items: center
+        }
+
+        .nav {
+            background: #fff;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .nav-inner {
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-weight: 900;
+            font-size: 14px
+        }
+
+        .cat-btn {
+            border: 1px solid #dfe8e2;
+            border-radius: 8px;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 190px;
+            background: #fff
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 33px
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: #f05283
+        }
+
+        .district-btn {
+            background: #dd5a8a;
+            color: #fff !important;
+            border-radius: 8px;
+            padding: 14px 20px;
             display: flex;
             align-items: center;
             gap: 8px
-        }
-
-        .cart-btn {
-            width: 48px;
-            height: 48px;
-            border-radius: 10px;
-            background: var(--green);
-            color: #fff !important;
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            font-size: 21px
         }
 
         .mobile-head {
             display: none;
             background: #fff;
             border-bottom: 1px solid var(--line);
-            padding: 10px 0;
             position: sticky;
             top: 0;
-            z-index: 9999
+            z-index: 99999
         }
 
-        .mobile-head-inner {
+        .mobile-inner {
+            height: 70px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 12px
+            justify-content: space-between
         }
 
         .hamb {
-            width: 42px;
-            height: 42px;
-            border: 0;
+            border: 1px solid #dfe8e2;
             background: #fff;
-            font-size: 26px;
-            color: #111
+            border-radius: 8px;
+            width: 45px;
+            height: 40px;
+            font-size: 24px
         }
+
+        .mobile-brand img{max-height:48px;width:auto}
 
         .mobile-brand {
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #0b4b90;
-            font-size: 23px;
-            font-weight: 950
-        }
-
-        .mobile-cart {
-            width: 42px;
-            height: 42px;
-            border-radius: 10px;
-            background: var(--green);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px
-        }
-
-        .mobile-search {
-            display: none;
-            background: #fff;
-            padding: 10px 14px;
-            border-bottom: 1px solid var(--line)
+            color: var(--green);
+            font-weight: 950;
+            font-size: 22px
         }
 
         .mobile-menu {
             display: none;
             background: #fff;
             border-bottom: 1px solid var(--line);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
-            padding: 10px 14px;
+            padding: 10px 18px;
             position: sticky;
-            top: 63px;
-            z-index: 9998
+            top: 70px;
+            z-index: 99998
         }
 
         .mobile-menu.active {
             display: grid;
-            gap: 6px
-        }
-
-        .mobile-menu a {
-            display: block;
-            padding: 12px 14px;
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            font-weight: 900;
-            color: #20352a;
-            background: #fff
-        }
-
-        .mobile-menu a:hover {
-            background: var(--green-soft);
-            color: var(--green)
-        }
-
-        .mobile-search .search-wrap {
-            max-width: none;
-            width: 100%
-        }
-
-        .navline {
-            background: #fff;
-            border-bottom: 1px solid var(--line)
-        }
-
-        .navline-inner {
-            height: 54px;
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            overflow-x: auto;
-            white-space: nowrap;
-            font-weight: 800;
-            color: #1d2b23
-        }
-
-        .navline-inner a:hover {
-            color: var(--green)
-        }
-
-        .breadcrumb-area {
-            background: #fff;
-            padding: 18px 0 8px
-        }
-
-        .breadcrumb-line {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            font-size: 14px;
-            color: #68746e;
-            flex-wrap: wrap
-        }
-
-        .page-title {
-            font-size: 22px;
-            font-weight: 900;
-            color: #15231c;
-            margin: 14px 0 0
-        }
-
-        .page-title strong {
-            color: var(--green-dark)
-        }
-
-        .location-strip {
-            background: #fff7ed;
-            border: 1px solid #ffd9b1;
-            border-radius: 10px;
-            padding: 12px;
-            margin: 14px 0;
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 14px;
-            align-items: center
-        }
-
-        .location-box {
-            border: 2px solid #2baa43;
-            background: #ecfff0;
-            border-radius: 999px;
-            padding: 12px 18px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #18823a;
-            font-weight: 800;
-            min-width: 0
-        }
-
-        .location-box span {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis
-        }
-
-        .trust-mini {
-            display: flex;
-            gap: 18px;
-            align-items: center;
-            justify-content: space-around;
-            background: #fff;
-            border: 1px solid #ffd9b1;
-            border-radius: 10px;
-            padding: 12px;
-            font-size: 14px;
-            color: #5f6b64
-        }
-
-        .trust-mini div {
-            display: flex;
-            align-items: center;
-            gap: 9px
-        }
-
-        .trust-mini i {
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: #fff1de;
-            color: var(--orange);
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        .filter-row {
-            background: #fff;
-            padding: 14px 0;
-            border-bottom: 1px solid var(--line)
-        }
-
-        .filters {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap
-        }
-
-        .filter-left {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap
-        }
-
-        .filter-pill {
-            border: 1px solid var(--line);
-            background: #fff;
-            border-radius: 999px;
-            padding: 10px 14px;
-            font-weight: 800;
-            color: #34423a;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, .03);
-            cursor: pointer
-        }
-
-        .filter-pill.active {
-            border-color: var(--green);
-            color: var(--green);
-            background: #effbf4
-        }
-
-        .sort-pill {
-            border: 1px solid var(--line);
-            background: #fff;
-            border-radius: 8px;
-            padding: 11px 14px;
-            font-weight: 800;
-            color: #34423a
-        }
-
-        .main-layout {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 22px;
-            padding: 22px 0 60px
-        }
-
-        .sidebar {
-            position: sticky;
-            top: 16px;
-            align-self: start;
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            padding: 18px;
-            box-shadow: var(--shadow)
-        }
-
-        .sidebar h3 {
-            font-size: 18px;
-            font-weight: 950;
-            margin-bottom: 14px;
-            color: var(--green-deep)
-        }
-
-        .cat-list {
-            display: grid;
             gap: 8px
         }
 
-        .cat-list a {
+        .mobile-menu a {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 12px;
+            font-weight: 900
+        }
+
+        .mobile-search {
+            display: none;
+            padding: 10px 18px;
+            border-bottom: 1px solid var(--line);
+            background: #fff
+        }
+
+        .hero-wrap {
+            padding: 28px 0 12px;
+            background: #fff
+        }
+
+        .hero-banner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 26px;
+            background: linear-gradient(180deg, #ea6a9c 0%, #cf5b8c 100%);
+            min-height: 640px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .08)
+        }
+
+        .hero-banner>img {
+            width: 100%;
+            height: 380px;
+            object-fit: contain;
+            object-position: center bottom;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: #ea6a9c
+        }
+
+        .hero-copy {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            padding: 42px 38px 38px;
+            background: linear-gradient(to bottom, rgba(207, 91, 140, 0) 0%, rgba(207, 91, 140, .35) 8%, rgba(207, 91, 140, .96) 30%, rgba(207, 91, 140, 1) 100%)
+        }
+
+        .hero-copy h1 {
+            font-size: 78px;
+            line-height: .90;
+            margin: 0 0 24px;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -3px
+        }
+
+        .hero-copy h1 .light {
+            color: #ffc7e1;
+            display: block
+        }
+
+        .hero-copy p {
+            font-size: 28px;
+            line-height: 1.25;
+            color: #fff;
+            margin: 0 0 22px
+        }
+
+        .hero-copy p b {
+            font-weight: 900
+        }
+
+        .hero-line {
+            width: 260px;
+            height: 2px;
+            background: rgba(255, 255, 255, .35);
+            margin-bottom: 24px
+        }
+
+        .hero-line:before {
+            display: none
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-bottom: 28px
+        }
+
+        .hero-feature {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 12px;
+            background: rgba(255, 255, 255, .10);
+            border: 1px solid rgba(255, 255, 255, .18);
+            backdrop-filter: blur(6px);
+            padding: 14px 18px;
+            border-radius: 16px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 800
+        }
+
+        .hero-feature i {
+            font-size: 22px
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .hero-btn {
+            height: 58px;
+            min-width: 190px;
+            padding: 0 30px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 17px;
+            font-weight: 900;
+            transition: .25s
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px)
+        }
+
+        .hero-btn.wa {
+            background: #fff;
+            color: #1ea952 !important
+        }
+
+        .hero-btn.call {
+            border: 2px solid rgba(255, 255, 255, .7);
+            color: #fff !important;
+            background: transparent
+        }
+
+        .trust-bar {
+            margin: 16px 0 24px;
+            background: #fff;
             border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 11px 12px;
-            font-weight: 800;
-            color: #35443c
-        }
-
-        .cat-list a:hover,
-        .cat-list a.active {
-            border-color: var(--green);
-            color: var(--green);
-            background: var(--green-soft)
-        }
-
-        .side-note {
-            margin-top: 16px;
-            background: #fff8ed;
-            border: 1px solid #ffe0ba;
             border-radius: 14px;
-            padding: 14px;
-            color: #6a4c20;
+            box-shadow: var(--shadow);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            overflow: hidden
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 20px 28px;
+            border-right: 1px solid var(--line)
+        }
+
+        .trust-item:last-child {
+            border-right: 0
+        }
+
+        .trust-item i {
+            font-size: 30px;
+            color: #ff5b8e
+        }
+
+        .trust-item b {
+            display: block
+        }
+
+        .trust-item span {
             font-size: 14px;
-            line-height: 1.5
+            color: #505a54
+        }
+
+        .section-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 18px;
+            margin: 20px 0
+        }
+
+        .section-head h2 {
+            font-size: 27px;
+            font-weight: 950;
+            margin: 0
+        }
+
+        .section-head p {
+            margin: 5px 0 0;
+            color: var(--muted)
+        }
+
+        .view-all {
+            background: #dd5a8a;
+            color: #fff !important;
+            border-radius: 8px;
+            padding: 13px 18px;
+            font-weight: 900;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px
         }
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px
         }
 
         .product-card {
-            background: #fff;
             border: 1px solid var(--line);
-            border-radius: 14px;
+            border-radius: 13px;
             overflow: hidden;
-            box-shadow: 0 8px 18px rgba(0, 0, 0, .04);
-            transition: .18s;
-            position: relative
+            background: #fff;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .04);
+            transition: .2s
         }
 
         .product-card:hover {
@@ -535,119 +557,110 @@
             box-shadow: var(--shadow2)
         }
 
+        .tag {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background: #2bbf66;
+            color: #fff;
+            border-radius: 999px;
+            padding: 5px 9px;
+            font-size: 12px;
+            font-weight: 900;
+            z-index: 3
+        }
+
+        .tag.discount {
+            background: #ff5b8e
+        }
+
         .fav {
             position: absolute;
             right: 10px;
             top: 10px;
-            width: 34px;
-            height: 34px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
             border: 1px solid var(--line);
             background: #fff;
-            border-radius: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6e7b74;
+            color: #9aa3a0;
+            display: grid;
+            place-items: center;
             z-index: 3
         }
 
         .product-img {
-            height: 235px;
-            background: #f4f4f4 center/cover no-repeat
+            height: 178px;
+            background: center/cover no-repeat
         }
 
         .product-body {
-            padding: 12px 12px 14px
-        }
-
-        .delivery {
-            font-size: 12px;
-            color: #25a33a;
-            font-weight: 900;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 5px
+            padding: 13px
         }
 
         .product-name {
             font-size: 15px;
-            font-weight: 800;
-            line-height: 1.35;
-            min-height: 42px;
-            color: #222;
-            margin-bottom: 8px
+            line-height: 1.32;
+            min-height: 40px;
+            font-weight: 900;
+            margin-bottom: 7px
         }
 
         .rating {
             font-size: 12px;
-            color: #f6a500;
-            margin-bottom: 8px
-        }
-
-        .rating span {
-            color: #666;
-            margin-left: 4px
+            color: #ffb000;
+            margin-bottom: 7px
         }
 
         .price {
-            color: #ff4b3e;
-            font-weight: 950;
             font-size: 20px;
-            margin-bottom: 4px
-        }
-
-        .old-price {
-            color: #9aa29d;
-            text-decoration: line-through;
-            font-size: 13px
-        }
-
-        .discount {
-            background: #ef5a52;
-            color: #fff;
-            font-size: 12px;
-            border-radius: 4px;
-            padding: 3px 5px;
-            font-weight: 900;
-            margin-left: 6px
-        }
-
-        .product-actions {
-            display: grid;
-            grid-template-columns: 1fr 42px;
-            gap: 8px;
-            margin-top: 12px
-        }
-
-        .order-btn {
-            border: 0;
-            background: var(--green);
-            color: #fff;
-            border-radius: 10px;
-            padding: 11px 8px;
+            color: #e53f36;
             font-weight: 950
         }
 
-        .call-mini {
-            border: 1px solid var(--green);
+        .order-btn {
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+            background: var(--green);
+            color: #fff !important;
+            border-radius: 9px;
+            padding: 11px;
+            font-weight: 950
+        }
+
+        .districts {
+            padding: 42px 0;
+            background: var(--soft)
+        }
+
+        .district-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px
+        }
+
+        .district-card {
             background: #fff;
-            color: var(--green);
-            border-radius: 10px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 17px;
+            font-weight: 950;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 17px
+            justify-content: space-between
+        }
+
+        .district-card i {
+            color: #ff5b8e
         }
 
         .seo-section {
-            background: #fff;
-            border-top: 1px solid var(--line);
-            padding: 52px 0
+            padding: 48px 0;
+            background: #fff
         }
 
         .seo-card {
-            background: #fff;
             border: 1px solid var(--line);
             border-radius: 18px;
             padding: 26px;
@@ -655,124 +668,41 @@
         }
 
         .seo-card h2 {
-            font-size: 32px;
+            font-size: 31px;
             font-weight: 950;
-            color: var(--green-deep);
-            margin-bottom: 14px
+            color: #07351f
         }
 
         .seo-card h3 {
             font-size: 22px;
             font-weight: 950;
-            color: var(--green-deep);
             margin-top: 24px
         }
 
         .seo-card p {
-            color: #5d6b64;
-            font-size: 16px
+            color: #5d6a63
         }
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 20px
-        }
 
-        .service-box {
-            background: var(--green-soft);
-            border: 1px solid #d6eee0;
-            border-radius: 16px;
-            padding: 18px
-        }
 
-        .service-box h3 {
-            font-size: 18px;
-            margin: 0 0 8px
-        }
-
-        .service-box p {
-            margin: 0;
-            font-size: 14px
-        }
-
-        .faq-section {
-            padding: 52px 0;
-            background: var(--green-soft)
-        }
-
-        .accordion-item {
-            border: 1px solid var(--line) !important;
-            border-radius: 14px !important;
-            overflow: hidden;
-            margin-bottom: 10px
-        }
-
-        .accordion-button {
-            font-weight: 900;
-            color: var(--green-deep);
-            box-shadow: none !important
-        }
-
-        .accordion-button:not(.collapsed) {
-            background: #fff;
-            color: var(--green)
-        }
-
-        .contact-section {
-            padding: 52px 0;
-            background: #fff
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 24px;
-            align-items: stretch
-        }
-
-        .contact-card {
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 24px;
-            box-shadow: var(--shadow)
-        }
-
-        .contact-line {
-            display: flex;
-            gap: 12px;
-            padding: 13px 0;
-            border-bottom: 1px solid var(--line)
-        }
-
-        .contact-line:last-child {
-            border-bottom: 0
-        }
-
-        .contact-line i {
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-            background: var(--green-soft);
-            color: var(--green);
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        .mapbox {
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            overflow: hidden;
-            min-height: 350px;
-            box-shadow: var(--shadow)
-        }
+        .seo-keywords {padding: 44px 0; background: #fff7fb}
+        .keyword-grid {display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px}
+        .keyword-card {background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;font-weight:900;box-shadow:0 8px 18px rgba(0,0,0,.035)}
+        .keyword-card span{display:block;font-size:13px;color:var(--muted);font-weight:700;margin-top:4px}
+        .faq-section {padding:48px 0;background:#fff}
+        .faq-grid {display:grid;grid-template-columns:1fr 1fr;gap:14px}
+        .faq-card {border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;box-shadow:0 8px 18px rgba(0,0,0,.035)}
+        .faq-card h3{font-size:18px;font-weight:950;margin:0 0 8px;color:#07351f}
+        .faq-card p{margin:0;color:#5d6a63;font-size:15px}
+        .nearby-note{margin-top:18px;padding:16px;border-radius:14px;background:#eefaf3;border:1px solid #d7efe1;color:#18442c;font-weight:800}
+        .seo-mini-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+        .seo-mini-links a{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-size:13px;font-weight:900;color:#25513a}
+        @media(max-width:991px){.keyword-grid{grid-template-columns:1fr 1fr}.faq-grid{grid-template-columns:1fr}}
 
         .footer {
-            background: var(--green-deep);
+            background: #07351f;
             color: #dcebe3;
-            padding: 44px 0 28px
+            padding: 42px 0 28px
         }
 
         .footer-grid {
@@ -783,12 +713,8 @@
 
         .footer h3,
         .footer h4 {
-            font-weight: 950;
-            color: #fff
-        }
-
-        .footer p {
-            color: #cfe0d8
+            color: #fff;
+            font-weight: 950
         }
 
         .footer a {
@@ -820,11 +746,10 @@
             align-items: center;
             justify-content: center;
             gap: 7px;
-            border-radius: 14px;
+            border-radius: 13px;
             color: #fff !important;
             font-weight: 900;
-            padding: 12px 8px;
-            font-size: 14px
+            padding: 12px 8px
         }
 
         .s-call {
@@ -839,17 +764,30 @@
             background: #6c757d
         }
 
-        @media(max-width:1180px) {
+        @media(max-width:1100px) {
+            .header-inner {
+                grid-template-columns: 210px 1fr 220px
+            }
+
             .product-grid {
-                grid-template-columns: repeat(3, 1fr)
+                grid-template-columns: repeat(4, 1fr)
+            }
+
+            .hero-copy h1 {
+                font-size: 58px
+            }
+
+            .hero-person {
+                right: 30px;
+                width: 43%
             }
         }
 
         @media(max-width:991px) {
 
-            .top-campaign,
-            .topbar,
-            .navline {
+            .mini-top,
+            .header,
+            .nav {
                 display: none
             }
 
@@ -858,92 +796,86 @@
                 display: block
             }
 
-            .main-layout {
-                grid-template-columns: 1fr
-            }
-
-            .sidebar {
-                display: none
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 14px
-            }
-
-            .location-strip {
-                grid-template-columns: 1fr
-            }
-
-            .trust-mini {
-                display: none
-            }
-
-            .filter-row {
-                position: sticky;
-                top: 63px;
-                z-index: 800
-            }
-
-            .filter-left {
-                overflow-x: auto;
-                flex-wrap: nowrap;
-                width: 100%;
-                padding-bottom: 4px
-            }
-
-            .filter-pill {
-                white-space: nowrap
-            }
-
-            .sort-pill {
-                display: none
-            }
-
-            .service-grid,
-            .contact-grid,
-            .footer-grid {
-                grid-template-columns: 1fr
-            }
-
-            .seo-card h2 {
-                font-size: 27px
-            }
-        }
-
-        @media(max-width:576px) {
             body {
-                padding-bottom: 72px
+                background: #f2f5fb
             }
 
             .container-site {
-                padding: 0 10px
+                max-width: 430px;
+                padding: 0 12px
             }
 
-            .mobile-brand {
-                font-size: 21px
+            .hero-wrap {
+                padding: 26px 0 12px
             }
 
-            .brand-mark {
-                width: 30px;
-                height: 30px
+            .hero-banner {
+                min-height: 560px;
+                border-radius: 22px;
+                display: block
             }
 
-            .breadcrumb-area {
-                padding-top: 12px
+            .hero-banner>img {
+                height: 260px;
+                object-fit: contain;
+                object-position: center bottom
             }
 
-            .page-title {
-                font-size: 18px
+            .hero-copy {
+                padding: 280px 24px 28px
             }
 
-            .location-box {
-                border-radius: 16px;
-                font-size: 13px
+            .hero-copy h1 {
+                font-size: 54px;
+                line-height: .92;
+                margin-bottom: 18px
             }
 
-            .main-layout {
-                padding-top: 14px
+            .hero-copy p {
+                display: block;
+                font-size: 21px;
+                margin-bottom: 18px
+            }
+
+            .hero-line {
+                display: block;
+                width: 150px;
+                margin-bottom: 18px
+            }
+
+            .hero-features {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px
+            }
+
+            .hero-feature {
+                width: calc(50% - 5px);
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                font-size: 13px;
+                padding: 12px 8px
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column
+            }
+
+            .hero-btn {
+                width: 100%;
+                height: 54px;
+                font-size: 15px
+            }
+
+            .trust-bar {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .trust-item {
+                padding: 14px;
+                border-bottom: 1px solid var(--line)
             }
 
             .product-grid {
@@ -951,657 +883,379 @@
                 gap: 12px
             }
 
-            .product-img {
-                height: 175px
+            .district-grid {
+                grid-template-columns: 1fr 1fr
             }
 
-            .product-body {
-                padding: 10px
+            .footer-grid {
+                grid-template-columns: 1fr
+            }
+
+            .section-head h2 {
+                font-size: 23px
+            }
+
+            .view-all {
+                display: none
+            }
+        }
+
+        @media(max-width:576px) {
+            .container-site {
+                max-width: 390px
+            }
+
+            .mobile-brand small {
+                font-size: 10px
+            }
+
+            .hero-banner {
+                min-height: 600px
+            }
+
+            .hero-banner>img {
+                height: 220px
+            }
+
+            .hero-copy {
+                padding: 230px 18px 22px
+            }
+
+            .hero-copy h1 {
+                font-size: 34px;
+                letter-spacing: -1px
+            }
+
+            .hero-copy p {
+                font-size: 17px
+            }
+
+            .hero-feature {
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start
+            }
+
+            .product-img {
+                height: 140px
             }
 
             .product-name {
-                font-size: 13px;
-                min-height: 54px
+                font-size: 13px
             }
 
             .price {
                 font-size: 17px
             }
 
-            .old-price,
-            .discount {
-                display: none
+            .trust-item {
+                gap: 10px
             }
 
-            .product-actions {
-                grid-template-columns: 1fr
+            .trust-item i {
+                font-size: 24px
             }
 
-            .call-mini {
-                display: none
+            .trust-item span {
+                font-size: 12px
             }
 
-            .order-btn {
-                font-size: 13px;
-                padding: 10px 6px
-            }
-
-            .delivery {
-                font-size: 11px
-            }
-
-            .filter-pill {
-                font-size: 13px;
-                padding: 9px 12px
-            }
-
-            .seo-section,
-            .faq-section,
-            .contact-section {
-                padding: 38px 0
-            }
-
-            .sticky-btn {
-                font-size: 12px;
-                padding: 11px 4px
-            }
-        }
-
-        .ads-hero {
-            background: linear-gradient(135deg, #0b5f34, #159447);
-            color: #fff;
-            padding: 46px 0;
-        }
-
-        .ads-hero-box {
-            display: grid;
-            grid-template-columns: 1.2fr .8fr;
-            gap: 24px;
-            align-items: center;
-        }
-
-        .ads-hero h1 {
-            font-size: 42px;
-            font-weight: 950;
-            margin-bottom: 12px;
-        }
-
-        .ads-hero p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #ecfff3;
-        }
-
-        .ads-hero-buttons {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .ads-btn {
-            padding: 15px 22px;
-            border-radius: 14px;
-            font-weight: 950;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .ads-call {
-            background: #fff;
-            color: #159447 !important;
-        }
-
-        .ads-wa {
-            background: #20b65a;
-            color: #fff !important;
-        }
-
-        .ads-trust {
-            background: rgba(255, 255, 255, .12);
-            border: 1px solid rgba(255, 255, 255, .25);
-            border-radius: 18px;
-            padding: 20px;
-        }
-
-        .ads-trust div {
-            margin-bottom: 12px;
-            font-weight: 800;
-        }
-
-        @media(max-width:768px) {
-            .ads-hero {
-                padding: 34px 0;
-            }
-
-            .ads-hero-box {
-                grid-template-columns: 1fr;
-            }
-
-            .ads-hero h1 {
-                font-size: 30px;
+            .seo-card h2 {
+                font-size: 24px
             }
         }
     </style>
 
     <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Florist","name":"MERİTAY BOTANİK | Yenişehir Çiçekçi","url":"https://cicekci.site/","telephone":"+905425716844","image":"https://cicekci.site/logo.png","priceRange":"₺₺","description":"Mersin Yenişehir çiçekçi MERİTAY BOTANİK; taze buket, gül, orkide, lilyum ve aynı gün çiçek teslimatı hizmeti verir.","address":{"@type":"PostalAddress","streetAddress":"Menteş, 9. Cadde No:30","addressLocality":"Yenişehir","addressRegion":"Mersin","postalCode":"33150","addressCountry":"TR"},"openingHours":"Mo-Su 00:00-23:59","areaServed":["Mersin","Yenişehir","Menteş","Pozcu","Mezitli","Akdeniz","Toroslar"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"56"}}
+  [{"@context":"https://schema.org","@type":["Florist","LocalBusiness"],"name":"MERİTAY BOTANİK | Mersin Yenişehir Çiçekçi","url":"https://meritay.com/","telephone":"+905425716844","image":"https://meritay.com/logo.png","priceRange":"₺₺","description":"Menteş, Yenişehir/Mersin merkezli Meritay Botanik; yaklaşık 20 km çevrede aynı gün çiçek siparişi, orkide, saksıda çiçek, çelenk ve araba süsleme hizmeti verir.","address":{"@type":"PostalAddress","streetAddress":"Menteş, 9. Cadde No:30","addressLocality":"Yenişehir","addressRegion":"Mersin","postalCode":"33150","addressCountry":"TR"},"geo":{"@type":"GeoCoordinates","latitude":"36.803","longitude":"34.623"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:30","closes":"23:30"}],"areaServed":["Yenişehir","Menteş","Pozcu","Mezitli","Akdeniz","Toroslar","Mersin 20 km çevresi"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Mersin Çiçekçi Hizmetleri","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mersin çiçek siparişi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mersin çelenk siparişi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mersin araba süsleme"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mersin orkide siparişi"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mersin saksıda çiçek"}}]},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"56"}},{"@context":"https://schema.org","@type":"WebSite","name":"Meritay Botanik","url":"https://meritay.com/","potentialAction":{"@type":"SearchAction","target":"https://meritay.com/products?search={search_term_string}","query-input":"required name=search_term_string"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Meritay Botanik nerede?","acceptedAnswer":{"@type":"Answer","text":"Meritay Botanik adresi Menteş, 9. Cadde No:30, 33150 Yenişehir/Mersin."}},{"@type":"Question","name":"Mersin’de aynı gün çiçek teslimatı var mı?","acceptedAnswer":{"@type":"Answer","text":"Stok ve yoğunluk durumuna göre Yenişehir, Pozcu, Mezitli, Akdeniz ve Toroslar çevresine aynı gün çiçek teslimatı yapılır."}},{"@type":"Question","name":"Çelenk ve araba süsleme hizmeti var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet. Mersin çelenk siparişi, açılış çelengi, cenaze çelengi ve gelin arabası çiçek süsleme hizmetleri için sipariş alınır."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://meritay.com/"}]}]
   </script>
 </head>
 
 <body>
-    <div class="top-campaign">Anneler Günü ve özel günler için Mersin’de aynı gün çiçek teslimatı</div>
+    <div class="mini-top">
+        <div class="container-site mini-inner">
+            <div class="mini-left"><span><i class="fa-solid fa-truck-fast"></i> Aynı Gün Teslimat</span><span><i
+                        class="fa-solid fa-location-dot"></i> Mersin’in Her İlçesine Hızlı Teslimat</span></div>
+            <div class="mini-right"><a href="https://wa.me/905425716844"><i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    Sipariş</a><a href="tel:+905425716844"><i class="fa-solid fa-phone"></i> 0542 571 68 44</a><span><i
+                        class="fa-solid fa-headset"></i> 7/24 Müşteri Hizmetleri</span></div>
+        </div>
+    </div>
 
-    <header class="topbar">
-        <div class="container-site topbar-inner">
-            <a class="brand" href="#"><span
-                    class="brand-mark"><span></span><span></span><span></span><span></span></span>MERİTAY BOTANİK</a>
-            <form class="search-wrap" role="search">
-                <input type="search" placeholder="Marka, ürün veya kategori ara" aria-label="Çiçek ara">
-                <button type="button" aria-label="Ara"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <div class="top-actions">
-                <a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');"
-                    class="track-call"><i class="fa-solid fa-truck-fast"></i> Sipariş Hattı</a>
-                <a href="https://wa.me/905425716844" target="_blank" class="track-whatsapp"><i
-                        class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                <a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');"
-                    class="cart-btn track-call"><i class="fa-solid fa-phone"></i></a>
+    <header class="header">
+        <div class="container-site header-inner">
+            <a class="brand" href="/"><span class="logo-flower"><i
+                        class="fa-solid fa-spa"></i></span><span>MERİTAY<small>ÇİÇEKÇİLİK</small></span></a>
+            <form class="search" role="search"><input type="search"
+                    placeholder="Ürün, kategori veya anahtar kelime ara..." aria-label="Çiçek ara"><button
+                    type="button"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+            <div class="head-actions">
+                <a class="head-action" href="#"><i class="fa-regular fa-user"></i><span><b>Hesabım</b><br>Giriş
+                        Yap</span></a>
+                <a class="head-action" href="tel:+905425716844"><span class="cart-icon"><i
+                            class="fa-solid fa-cart-shopping"></i><em
+                            class="cart-count">0</em></span><span><b>Sepetim</b><br>0,00 TL</span></a>
             </div>
         </div>
     </header>
 
     <div class="mobile-head">
-        <div class="container-site mobile-head-inner">
-            <button class="hamb" type="button" id="mobileMenuBtn" aria-label="Menü"><i
-                    class="fa-solid fa-bars"></i></button>
-            <a class="mobile-brand" href="#"><span
-                    class="brand-mark"><span></span><span></span><span></span><span></span></span>MERİTAY</a>
-            <a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');"
-                class="mobile-cart track-call"><i class="fa-solid fa-phone"></i></a>
-        </div>
+        <div class="container-site mobile-inner"><a class="mobile-brand" href="/"><img src="logo.png" alt=""></a><button class="hamb" id="mobileMenuBtn"
+                type="button"><i class="fa-solid fa-bars"></i></button></div>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#urunler">Mersin Çiçekçi</a>
-        <a href="#urunler">Yenişehir Çiçekçi</a>
-        <a href="#urunler">Gül Buketi</a>
-        <a href="#urunler">Orkide</a>
-        <a href="#urunler">Aynı Gün</a>
-        <a href="#iletisim">İletişim</a>
+    <div class="mobile-menu" id="mobileMenu"><a href="#urunler">Çok Satanlar</a><a href="#urunler">Gül Buketleri</a><a
+            href="#urunler">Orkideler</a><a href="#ilceler">İlçelere Göre Çiçekçi</a><a href="#iletisim">İletişim</a>
     </div>
-
     <div class="mobile-search">
-        <form class="search-wrap" role="search">
-            <input type="search" placeholder="Çiçek, orkide, gül ara" aria-label="Çiçek ara">
-            <button type="button" aria-label="Ara"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        <form class="search"><input type="search" placeholder="Çiçek, orkide, gül ara"><button type="button"><i
+                    class="fa-solid fa-magnifying-glass"></i></button></form>
     </div>
 
-    <nav class="navline">
-        <div class="container-site navline-inner">
-            <a href="#urunler">Mersin Çiçekçi</a>
-            <a href="#urunler">Yenişehir Çiçekçi</a>
-            <a href="#urunler">Doğum Günü</a>
-            <a href="#urunler">Orkide</a>
-            <a href="#urunler">Gül Buketi</a>
-            <a href="#urunler">Aynı Gün</a>
-            <a href="#iletisim">İletişim</a>
+    <nav class="nav">
+        <div class="container-site nav-inner"><a class="cat-btn" href="#urunler"><i class="fa-solid fa-bars"></i> TÜM
+                KATEGORİLER</a>
+            <div class="nav-links"><a class="active" href="/">Ana Sayfa</a><a href="#urunler">Çok Satanlar</a><a
+                    href="#urunler">Gül Buketleri</a><a href="#urunler">Orkideler</a><a href="#urunler">Kutuda
+                    Çiçek</a><a href="#urunler">Lilyum</a><a href="#urunler">Tasarım Çiçekler</a><a
+                    href="#iletisim">İletişim</a></div><a class="district-btn" href="#ilceler"><i
+                    class="fa-solid fa-location-dot"></i> İlçelere Göre Çiçekçi</a>
         </div>
     </nav>
 
-    <section class="ads-hero">
-        <div class="container-site ads-hero-box">
-            <div>
-                <h1>Mersin Yenişehir Çiçekçi</h1>
-                <p>
-                    Mersin çiçekçi arayanlar için aynı gün teslimat.
-                    Yenişehir, Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar’a hızlı çiçek siparişi.
-                </p>
-
-                <div class="ads-hero-buttons">
-                    <a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');"
-                        class="ads-btn ads-call track-call">
-                        <i class="fa-solid fa-phone"></i> Hemen Ara
-                    </a>
-
-                    <a href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
-                        target="_blank" class="ads-btn ads-wa track-whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Sipariş
-                    </a>
+    <section class="hero-wrap">
+        <div class="container-site">
+            <div class="hero-banner">
+                       <img src="banner.png" alt="Meritay Botanik Mersin çiçek siparişi"
+                        onerror="this.style.display='none'">
+                <div class="hero-copy">
+                    <h1><span class="light">MERSİN</span> ÇİÇEKÇİ</h1>
+                    <p>Yenişehir merkezli Meritay Botanik<br>20 km çevreye aynı gün <b>çiçek teslimatı</b></p>
+                    <div class="hero-line"></div>
+                    <div class="hero-features">
+                        <div class="hero-feature"><i class="fa-solid fa-truck-fast"></i> Aynı Gün<br>Teslimat</div>
+                        <div class="hero-feature"><i class="fa-regular fa-star"></i> %100<br>Taze Çiçek</div>
+                        <div class="hero-feature"><i class="fa-solid fa-shield-heart"></i> Güvenli<br>Ödeme</div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a class="hero-btn wa track-whatsapp" target="_blank"
+                            href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."><i
+                                class="fa-brands fa-whatsapp"></i> Whatsapp Sipariş</a>
+                        <a class="hero-btn call track-call" href="tel:+905425716844"><i class="fa-solid fa-phone"></i>
+                            Hemen Ara</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="ads-trust">
-                <div><i class="fa-solid fa-truck-fast"></i> Aynı gün çiçek teslimatı</div>
-                <div><i class="fa-solid fa-location-dot"></i> Yenişehir merkezli hızlı servis</div>
-                <div><i class="fa-solid fa-star"></i> 5.0 müşteri puanı</div>
-                <div><i class="fa-solid fa-phone-volume"></i> Telefonla hızlı sipariş</div>
+            <div class="trust-bar">
+                <div class="trust-item"><i class="fa-solid fa-location-dot"></i>
+                    <div><b>Mersin'in</b><span>Her İlçesine Teslimat</span></div>
+                </div>
+                <div class="trust-item"><i class="fa-regular fa-clock"></i>
+                    <div><b>Aynı Gün</b><span>Hızlı Teslimat</span></div>
+                </div>
+                <div class="trust-item"><i class="fa-regular fa-flower"></i>
+                    <div><b>Taze ve Kaliteli</b><span>%100 Taze Çiçekler</span></div>
+                </div>
+                <div class="trust-item"><i class="fa-regular fa-credit-card"></i>
+                    <div><b>Güvenli Ödeme</b><span>Kredi Kartı & Havale</span></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="filter-row">
-        <div class="container-site filters">
-            <div class="filter-left">
-                <button class="filter-pill active" type="button" data-filter="all"><i
-                        class="fa-solid fa-border-all"></i> Tüm Ürünler</button>
-                <button class="filter-pill" type="button" data-filter="gul">Gül Buketi</button>
-                <button class="filter-pill" type="button" data-filter="orkide">Orkide</button>
-                <button class="filter-pill" type="button" data-filter="lilyum">Lilyum</button>
-                <button class="filter-pill" type="button" data-filter="acil"><i class="fa-solid fa-truck-fast"></i> Aynı
-                    Gün</button>
-                <button class="filter-pill" type="button" data-filter="ozel"><i class="fa-solid fa-pen-to-square"></i>
-                    Özel Aranjman</button>
-                <button class="filter-pill" type="button" data-filter="ucuz">600 TL Altı</button>
-            </div>
-            <button class="sort-pill" type="button" id="sortPrice"><i class="fa-solid fa-arrow-down-short-wide"></i>
-                Fiyata Göre Sırala</button>
+    <main class="container-site" id="urunler">
+        <div class="section-head">
+            <div>
+                <h2>Çok Satan Çiçekler</h2>
+                <p>Mersin'de en çok tercih edilen taze çiçekler</p>
+            </div><a class="view-all" href="/products">Tümünü Gör <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-    </section>
+        <div class="product-grid">
+            <article class="product-card"><span class="tag">Çok Satan</span><button class="fav"><i
+                        class="fa-regular fa-heart"></i></button>
+                <div class="product-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="product-body">
+                    <h2 class="product-name">Mersin Kırmızı Gül Buketi</h2>
+                    <div class="rating">★★★★★ <span>(56)</span></div>
+                    <div class="price">699,90 TL</div><a class="order-btn track-whatsapp" target="_blank"
+                        href="https://wa.me/905425716844?text=Kırmızı%20gül%20buketi%20siparişi%20vermek%20istiyorum">Sipariş
+                        Ver</a>
+                </div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="product-body">
+                    <h2 class="product-name">Yenişehir Beyaz Orkide</h2>
+                    <div class="rating">★★★★★ <span>(42)</span></div>
+                    <div class="price">749,90 TL</div><a class="order-btn track-whatsapp" target="_blank"
+                        href="https://wa.me/905425716844?text=Orkide%20siparişi%20vermek%20istiyorum">Sipariş Ver</a>
+                </div>
+            </article>
+            <article class="product-card"><span class="tag discount">İndirim</span><button class="fav"><i
+                        class="fa-regular fa-heart"></i></button>
+                <div class="product-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="product-body">
+                    <h2 class="product-name">Kutuda Pembe Gül</h2>
+                    <div class="rating">★★★★★ <span>(31)</span></div>
+                    <div class="price">849,90 TL</div><a class="order-btn track-whatsapp" target="_blank"
+                        href="https://wa.me/905425716844?text=Kutuda%20pembe%20gül%20siparişi%20vermek%20istiyorum">Sipariş
+                        Ver</a>
+                </div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1509719662280-1e1fd699244d?auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="product-body">
+                    <h2 class="product-name">Premium Kutulu Kırmızı Gül</h2>
+                    <div class="rating">★★★★★ <span>(48)</span></div>
+                    <div class="price">999,90 TL</div><a class="order-btn track-whatsapp" target="_blank"
+                        href="https://wa.me/905425716844?text=Kutulu%20kırmızı%20gül%20siparişi%20vermek%20istiyorum">Sipariş
+                        Ver</a>
+                </div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img"
+                    style="background-image:url('https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="product-body">
+                    <h2 class="product-name">Mersin Lilyum Aranjmanı</h2>
+                    <div class="rating">★★★★★ <span>(27)</span></div>
+                    <div class="price">649,90 TL</div><a class="order-btn track-whatsapp" target="_blank"
+                        href="https://wa.me/905425716844?text=Lilyum%20aranjmanı%20siparişi%20vermek%20istiyorum">Sipariş
+                        Ver</a>
+                </div>
+            </article>
 
-    <main class="container-site main-layout" id="urunler">
-        <aside class="sidebar">
-            <h3>Mersin Çiçekçi Kategorileri</h3>
-            <div class="cat-list">
-                <a class="active" href="#urunler" data-filter="all">Tüm Çiçekler <span>16</span></a>
-                <a href="#urunler" data-filter="gul">Gül Buketi <span>4</span></a>
-                <a href="#urunler" data-filter="orkide">Orkide <span>3</span></a>
-                <a href="#urunler" data-filter="lilyum">Lilyum <span>3</span></a>
-                <a href="#urunler" data-filter="ozel">Kutulu / Özel <span>2</span></a>
-                <a href="#urunler" data-filter="acil">Acil Çiçekçi <span>4</span></a>
-            </div>
-            <div class="side-note"><strong>Yenişehir çiçekçi notu:</strong><br>Telefon veya WhatsApp ile hızlı sipariş
-                verebilir, aynı gün teslimat için uygun ürünleri sorabilirsiniz.</div>
-        </aside>
-
-        <section>
-            <div class="product-grid">
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Çarşamba ücretsiz teslimat</div>
-                        <h2 class="product-name">Mersin Çiçekçi Kırmızı Gül Buketi</h2>
-                        <div class="rating">★★★★★ <span>(56)</span></div>
-                        <div><span class="price">699,90 TL</span><br><span class="old-price">839,90 TL</span><span
-                                class="discount">%17</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Kırmızı%20Gül%20Buketi%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Çarşamba ücretsiz teslimat</div>
-                        <h2 class="product-name">Yenişehir Çiçekçi Orkide Çiçeği</h2>
-                        <div class="rating">★★★★★ <span>(42)</span></div>
-                        <div><span class="price">749,90 TL</span><br><span class="old-price">899,90 TL</span><span
-                                class="discount">%16</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Orkide%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Aynı gün teslimat</div>
-                        <h2 class="product-name">Mersin Lilyum Aranjmanı</h2>
-                        <div class="rating">★★★★★ <span>(31)</span></div>
-                        <div><span class="price">649,90 TL</span><br><span class="old-price">779,90 TL</span><span
-                                class="discount">%12</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Lilyum%20aranjmanı%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Aynı gün teslimat</div>
-                        <h2 class="product-name">Çiçek Siparişi Mersin Karışık Buket</h2>
-                        <div class="rating">★★★★★ <span>(88)</span></div>
-                        <div><span class="price">599,90 TL</span><br><span class="old-price">699,90 TL</span><span
-                                class="discount">%14</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Karışık%20buket%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1518709779341-56cf4535e94b?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Hızlı teslimat</div>
-                        <h2 class="product-name">Acil Çiçekçi Mersin Papatya Buketi</h2>
-                        <div class="rating">★★★★★ <span>(27)</span></div>
-                        <div><span class="price">499,90 TL</span><br><span class="old-price">599,90 TL</span><span
-                                class="discount">%10</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Papatya%20buketi%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1509719662280-1e1fd699244d?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Aynı gün teslimat</div>
-                        <h2 class="product-name">En Yakın Çiçekçi Kutulu Gül</h2>
-                        <div class="rating">★★★★★ <span>(19)</span></div>
-                        <div><span class="price">849,90 TL</span><br><span class="old-price">999,90 TL</span><span
-                                class="discount">%15</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Kutulu%20gül%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Hızlı teslimat</div>
-                        <h2 class="product-name">Mersin Yenişehir Çiçekçi Renkli Buket</h2>
-                        <div class="rating">★★★★★ <span>(64)</span></div>
-                        <div><span class="price">549,90 TL</span><br><span class="old-price">649,90 TL</span><span
-                                class="discount">%15</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Renkli%20buket%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-                <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
-                    <div class="product-img"
-                        style="background-image:url('https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=80')">
-                    </div>
-                    <div class="product-body">
-                        <div class="delivery"><i class="fa-solid fa-truck-fast"></i> Aynı gün teslimat</div>
-                        <h2 class="product-name">Online Çiçek Siparişi Mersin Özel Aranjman</h2>
-                        <div class="rating">★★★★★ <span>(36)</span></div>
-                        <div><span class="price">799,90 TL</span><br><span class="old-price">949,90 TL</span><span
-                                class="discount">%16</span></div>
-                        <div class="product-actions"><a
-                                href="https://wa.me/905425716844?text=Özel%20aranjman%20siparişi%20vermek%20istiyorum"
-                                target="_blank" class="order-btn track-whatsapp text-center">Sipariş Ver</a><a
-                                class="call-mini track-call" href="tel:+905425716844"><i
-                                    class="fa-solid fa-phone"></i></a></div>
-                    </div>
-                </article>
-            </div>
-        </section>
+            <article class="product-card"><span class="tag">Acil</span><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="product-body"><h2 class="product-name">Mersin Çelenk Siparişi</h2><div class="rating">★★★★★ <span>(33)</span></div><div class="price">1.499,90 TL</div><a class="order-btn track-whatsapp" target="_blank" href="https://wa.me/905425716844?text=Mersin%20çelenk%20siparişi%20vermek%20istiyorum">Sipariş Ver</a></div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="product-body"><h2 class="product-name">Açılış Çelengi Mersin</h2><div class="rating">★★★★★ <span>(29)</span></div><div class="price">1.799,90 TL</div><a class="order-btn track-whatsapp" target="_blank" href="https://wa.me/905425716844?text=Açılış%20çelengi%20siparişi%20vermek%20istiyorum">Sipariş Ver</a></div>
+            </article>
+            <article class="product-card"><span class="tag discount">Yeni</span><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="product-body"><h2 class="product-name">Saksıda Çiçek Mersin</h2><div class="rating">★★★★★ <span>(44)</span></div><div class="price">549,90 TL</div><a class="order-btn track-whatsapp" target="_blank" href="https://wa.me/905425716844?text=Saksıda%20çiçek%20siparişi%20vermek%20istiyorum">Sipariş Ver</a></div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="product-body"><h2 class="product-name">Araba Süsleme Mersin</h2><div class="rating">★★★★★ <span>(21)</span></div><div class="price">Fiyat Al</div><a class="order-btn track-whatsapp" target="_blank" href="https://wa.me/905425716844?text=Mersin%20araba%20süsleme%20için%20fiyat%20almak%20istiyorum">Sipariş Ver</a></div>
+            </article>
+            <article class="product-card"><button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="product-body"><h2 class="product-name">Karışık Buket Mersin</h2><div class="rating">★★★★★ <span>(52)</span></div><div class="price">599,90 TL</div><a class="order-btn track-whatsapp" target="_blank" href="https://wa.me/905425716844?text=Karışık%20buket%20siparişi%20vermek%20istiyorum">Sipariş Ver</a></div>
+            </article>
+        </div>
     </main>
+
+    <section class="districts" id="ilceler">
+        <div class="container-site">
+            <div class="section-head">
+                <div>
+                    <h2>İlçelere Göre Mersin Çiçekçi</h2>
+                    <p>Google Ads için yerel kalite puanı yüksek ilçe sayfaları</p>
+                </div>
+            </div>
+            <div class="district-grid">
+                <a class="district-card" href="/yenisehir-cicekci">Yenişehir Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/mentes-cicekci">Menteş Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/pozcu-cicekci">Pozcu Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/mezitli-cicekci">Mezitli Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/akdeniz-cicekci">Akdeniz Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/toroslar-cicekci">Toroslar Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/forum-avm-cicekci">Forum AVM Yakın Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="district-card" href="/mersin-cicekci">Mersin Çiçekçi <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="nearby-note">Teslimat odağı: Menteş, 9. Cadde No:30 Yenişehir/Mersin adresinden yaklaşık 20 km çevre. Yenişehir, Pozcu, Mezitli, Akdeniz ve Toroslar çevresinde hızlı çiçek gönderimi hedeflenir.</div>
+        </div>
+    </section>
 
     <section class="seo-section">
         <div class="container-site">
             <div class="seo-card">
-                <h2>Mersin Çiçekçi ve Yenişehir Çiçekçi Hizmeti</h2>
-                <p>Mersin çiçekçi arıyorsanız MERİTAY BOTANİK, Yenişehir çiçekçi hizmeti ile hızlı çiçek siparişi ve
-                    aynı gün çiçek teslimatı sunar. Gül buketi, orkide, lilyum, papatya, kutulu çiçek ve özel aranjman
-                    siparişleri için telefon veya WhatsApp üzerinden kolayca iletişim kurabilirsiniz.</p>
-                <p>Çiçekçi Mersin, Mersin Yenişehir çiçekçi, çiçek siparişi Mersin, en yakın çiçekçi, acil çiçekçi
-                    Mersin ve aynı gün çiçek teslimatı aramalarında müşterinin aradığı şey nettir: ürün görmek, fiyat
-                    görmek, güven duymak ve hızlı sipariş vermek. Bu sayfa doğrudan bu ihtiyaca göre hazırlanmıştır.</p>
-                <div class="service-grid">
-                    <div class="service-box">
-                        <h3>Aynı Gün Çiçek Teslimatı</h3>
-                        <p>Yenişehir ve çevresine uygun stok durumuna göre aynı gün teslimat yapılır.</p>
-                    </div>
-                    <div class="service-box">
-                        <h3>Acil Çiçekçi Mersin</h3>
-                        <p>Son dakika çiçek siparişi için hızlı telefon ve WhatsApp hattı aktiftir.</p>
-                    </div>
-                    <div class="service-box">
-                        <h3>Yenişehir Çiçekçi</h3>
-                        <p>Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar çevresine sipariş alınır.</p>
-                    </div>
-                </div>
+                <h2>Mersin Çiçekçi, Yakındaki Çiçekçi ve Aynı Gün Çiçek Siparişi</h2>
+                <p>Meritay Botanik, Menteş Mahallesi 9. Cadde No:30 Yenişehir/Mersin adresinden hizmet veren yerel çiçekçi işletmesidir. Mersin çiçekçi, Yenişehir çiçekçi, Pozcu çiçekçi, Mezitli çiçekçi, Akdeniz çiçekçi, Toroslar çiçekçi, en yakın çiçekçi ve yakındaki çiçekçi aramalarında kullanıcıya ürün, fiyat, teslimat ve hızlı sipariş bilgisi sunar.</p>
+                <h3>Mersin’de çiçek siparişi, çelenk, orkide ve saksı çiçeği</h3>
+                <p>Gül buketi, orkide, lilyum, saksıda çiçek, kutuda çiçek, karışık buket, açılış çelengi, cenaze çelengi, araba süsleme ve özel aranjman talepleri için telefon veya WhatsApp üzerinden hızlıca sipariş alınır. Sayfa Google Ads açılış sayfası kalitesi, yerel SEO, GEO ve dönüşüm odaklı hazırlanmıştır.</p>
+                <h3>Google Ads için neden uygun?</h3>
+                <p>Reklamdan gelen kullanıcı ilk ekranda güven mesajı, ürünler, fiyat alanları, WhatsApp, telefon ve yol tarifi butonlarını görür. Anahtar kelime, bölge, hizmet ve ürün uyumu korunduğu için kalite puanı ve dönüşüm oranı hedeflenir.</p>
+                <div class="seo-mini-links"><a href="/celenk-siparisi-mersin">Mersin Çelenk</a><a href="/araba-susleme-mersin">Araba Süsleme</a><a href="/orkide-siparisi-mersin">Orkide Siparişi</a><a href="/saksi-cicegi-mersin">Saksı Çiçeği</a><a href="/acil-cicekci-mersin">Acil Çiçekçi</a><a href="/en-yakin-cicekci-mersin">En Yakın Çiçekçi</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="seo-keywords">
+        <div class="container-site">
+            <div class="section-head"><div><h2>Mersin Yerel Çiçekçi Hizmetleri</h2><p>20 km çevrede en çok aranan çiçek ve teslimat hizmetleri</p></div></div>
+            <div class="keyword-grid">
+                <a class="keyword-card" href="/en-yakin-cicekci-mersin">En Yakın Çiçekçi <span>Yenişehir, Pozcu, Menteş çevresi</span></a>
+                <a class="keyword-card" href="/acil-cicekci-mersin">Acil Çiçekçi Mersin <span>Bugün teslim çiçek siparişi</span></a>
+                <a class="keyword-card" href="/celenk-siparisi-mersin">Mersin Çelenk <span>Açılış ve tören çelengi</span></a>
+                <a class="keyword-card" href="/araba-susleme-mersin">Araba Süsleme <span>Gelin arabası çiçek süsleme</span></a>
+                <a class="keyword-card" href="/orkide-siparisi-mersin">Orkide Siparişi <span>Beyaz orkide ve özel orkide</span></a>
+                <a class="keyword-card" href="/saksi-cicegi-mersin">Saksıda Çiçek <span>Canlı saksı bitkisi ve hediye</span></a>
+                <a class="keyword-card" href="/gul-buketi-mersin">Gül Buketi Mersin <span>Kırmızı gül ve özel buket</span></a>
+                <a class="keyword-card" href="/online-cicek-siparisi-mersin">Online Çiçek Siparişi <span>WhatsApp ve telefonla hızlı sipariş</span></a>
             </div>
         </div>
     </section>
 
     <section class="faq-section">
         <div class="container-site">
-            <h2 class="mb-4 fw-bold">Mersin Çiçekçi Sık Sorulan Sorular</h2>
-            <div class="accordion" id="faq">
-                <div class="accordion-item">
-                    <h3 class="accordion-header"><button class="accordion-button" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q1">Mersin’de aynı gün çiçek teslimatı var
-                            mı?</button></h3>
-                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
-                        <div class="accordion-body">Evet. Yenişehir ve çevresinde stok ve yoğunluğa göre aynı gün çiçek
-                            teslimatı için sipariş alınır.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q2">Çiçek siparişi nasıl verilir?</button></h3>
-                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body">Telefonla arayabilir veya WhatsApp üzerinden ürün, adres, teslimat
-                            bilgisi ve kart notunuzu gönderebilirsiniz.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#q3">Yenişehir çiçekçi olarak hangi ürünler
-                            var?</button></h3>
-                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
-                        <div class="accordion-body">Gül buketi, orkide, lilyum, papatya, karışık buket, kutulu çiçek ve
-                            özel aranjman seçenekleri hazırlanır.</div>
-                    </div>
-                </div>
+            <div class="section-head"><div><h2>Mersin Çiçekçi Sık Sorulan Sorular</h2><p>Google ve yapay zekâ aramaları için net işletme cevapları</p></div></div>
+            <div class="faq-grid">
+                <div class="faq-card"><h3>Meritay Botanik nerede?</h3><p>Adresimiz Menteş, 9. Cadde No:30, 33150 Yenişehir/Mersin. Yenişehir merkezli yerel çiçekçi olarak hizmet veriyoruz.</p></div>
+                <div class="faq-card"><h3>Hangi bölgelere çiçek gönderiyorsunuz?</h3><p>Yaklaşık 20 km çevrede Yenişehir, Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar bölgelerine hızlı teslimat hedeflenir.</p></div>
+                <div class="faq-card"><h3>Aynı gün çiçek teslimatı var mı?</h3><p>Evet. Stok ve yoğunluğa göre Mersin’de aynı gün çiçek teslimatı için telefon veya WhatsApp üzerinden sipariş alınır.</p></div>
+                <div class="faq-card"><h3>Çelenk ve araba süsleme yapıyor musunuz?</h3><p>Evet. Mersin çelenk siparişi, açılış çelengi, cenaze çelengi ve gelin arabası çiçek süsleme hizmetleri için fiyat alabilirsiniz.</p></div>
             </div>
         </div>
     </section>
 
-    <section class="contact-section" id="iletisim">
-        <div class="container-site contact-grid">
-            <div class="contact-card">
-                <h2 class="fw-bold">MERİTAY BOTANİK Yenişehir Çiçekçi</h2>
-                <p>Mersin çiçekçi siparişi, aynı gün teslimat ve özel buket hazırlığı için hemen iletişime geçin.</p>
-                <div class="contact-line"><i class="fa-solid fa-phone"></i>
-                    <div><b>Telefon</b><br><a href="tel:+905425716844"
-                            onclick="return gtag_report_conversion('tel:+905425716844');" class="track-call">0542 571 68
-                            44</a></div>
-                </div>
-                <div class="contact-line"><i class="fa-solid fa-location-dot"></i>
-                    <div><b>Adres</b><br>Menteş, 9. Cadde No:30, 33150 Yenişehir / Mersin</div>
-                </div>
-                <div class="contact-line"><i class="fa-solid fa-clock"></i>
-                    <div><b>Çalışma Saatleri</b><br>24 saat açık</div>
-                </div>
-            </div>
-            <div class="mapbox ratio ratio-16x9"><iframe title="MERİTAY BOTANİK Harita"
-                    src="https://www.google.com/maps?q=Mente%C5%9F%2C%209.%20Cadde%20No%3A30%2C%2033150%20Yeni%C5%9Fehir%2FMersin&output=embed"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-        </div>
-    </section>
-
-    <footer class="footer">
+    <footer class="footer" id="iletisim">
         <div class="container-site footer-grid">
             <div>
                 <h3>MERİTAY BOTANİK</h3>
-                <p>Mersin çiçekçi ve Yenişehir çiçekçi hizmeti. Taze buket, orkide, gül, lilyum ve aynı gün çiçek
-                    teslimatı.</p>
+                <p>Mersin çiçekçi ve aynı gün çiçek teslimatı. Gül buketi, orkide, lilyum, kutuda çiçek ve özel
+                    aranjman.</p>
             </div>
             <div>
-                <h4>Hizmetler</h4>
-                <p>Mersin Çiçekçi<br>Yenişehir Çiçekçi<br>Çiçek Siparişi Mersin<br>Acil Çiçekçi Mersin</p>
+                <h4>Yerel Sayfalar</h4>
+                <p>Yenişehir Çiçekçi<br>Pozcu Çiçekçi<br>Mezitli Çiçekçi<br>Akdeniz Çiçekçi<br>Toroslar Çiçekçi<br>Mersin Çelenk<br>Araba Süsleme</p>
             </div>
             <div>
                 <h4>İletişim</h4>
-                <p><a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');">0542 571 68
-                        44</a><br>Menteş, Yenişehir / Mersin</p>
+                <p><a href="tel:+905425716844">0542 571 68 44</a><br>Menteş, Yenişehir / Mersin</p>
             </div>
         </div>
     </footer>
 
     <div class="sticky-actions">
-        <div class="sticky-grid">
-            <a href="tel:+905425716844" onclick="return gtag_report_conversion('tel:+905425716844');"
-                class="sticky-btn s-call track-call"><i class="fa-solid fa-phone"></i> Ara</a>
-            <a href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
+        <div class="sticky-grid"><a href="tel:+905425716844" class="sticky-btn s-call track-call"><i
+                    class="fa-solid fa-phone"></i> Ara</a><a
+                href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
                 target="_blank" class="sticky-btn s-wa track-whatsapp"><i class="fa-brands fa-whatsapp"></i>
-                WhatsApp</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=MER%C4%B0TAY%20BOTAN%C4%B0K%20Yeni%C5%9Fehir%20%C3%87i%C3%A7ek%C3%A7i"
-                target="_blank" class="sticky-btn s-map track-route"><i class="fa-solid fa-route"></i> Yol</a>
-        </div>
+                WhatsApp</a><a
+                href="https://www.google.com/maps/search/?api=1&query=MER%C4%B0TAY%20BOTAN%C4%B0K%20Yeni%C5%9Fehir%20%C3%87i%C3%A7ek%C3%A7i"
+                target="_blank" class="sticky-btn s-map"><i class="fa-solid fa-route"></i> Yol</a></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function sendEvent(name) {
-            if (typeof gtag === 'function') {
-                gtag('event', name, { event_category: 'lead', event_label: 'cicekci_site' });
-            }
-        }
-        document.querySelectorAll('.track-call').forEach(function (el) { el.addEventListener('click', function () { sendEvent('telefon_tiklama') }) });
-        document.querySelectorAll('.track-whatsapp').forEach(function (el) { el.addEventListener('click', function () { sendEvent('whatsapp_tiklama') }) });
-        document.querySelectorAll('.track-route').forEach(function (el) { el.addEventListener('click', function () { sendEvent('yol_tarifi_tiklama') }) });
-
-        /* Ürün arama, filtreleme ve sıralama */
-        const productGrid = document.querySelector('.product-grid');
-        const products = Array.from(document.querySelectorAll('.product-card'));
-        const filterButtons = Array.from(document.querySelectorAll('[data-filter]'));
-        const searchInputs = Array.from(document.querySelectorAll('.search-wrap input'));
-        const sortButton = document.getElementById('sortPrice');
-        let activeFilter = 'all';
-        let searchText = '';
-        let sortAsc = true;
-
-        function productPrice(card) {
-            const priceText = (card.querySelector('.price')?.textContent || '0').replace(/[^0-9,]/g, '').replace(',', '.');
-            return parseFloat(priceText) || 0;
-        }
-
-        function productCategory(card) {
-            const text = card.textContent.toLocaleLowerCase('tr-TR');
-            const cats = ['all'];
-            if (text.includes('gül')) cats.push('gul');
-            if (text.includes('orkide')) cats.push('orkide');
-            if (text.includes('lilyum')) cats.push('lilyum');
-            if (text.includes('özel') || text.includes('kutulu') || text.includes('aranjman')) cats.push('ozel');
-            if (text.includes('aynı gün') || text.includes('hızlı') || text.includes('çarşamba')) cats.push('acil');
-            if (productPrice(card) < 600) cats.push('ucuz');
-            return cats;
-        }
-
-        function applyFilters() {
-            const q = searchText.trim().toLocaleLowerCase('tr-TR');
-            products.forEach(function (card) {
-                const text = card.textContent.toLocaleLowerCase('tr-TR');
-                const matchesSearch = !q || text.includes(q);
-                const matchesFilter = activeFilter === 'all' || productCategory(card).includes(activeFilter);
-                card.style.display = (matchesSearch && matchesFilter) ? '' : 'none';
-            });
-        }
-
-        filterButtons.forEach(function (btn) {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                activeFilter = btn.getAttribute('data-filter') || 'all';
-                filterButtons.forEach(function (b) {
-                    b.classList.toggle('active', b.getAttribute('data-filter') === activeFilter);
-                });
-                applyFilters();
-                document.getElementById('urunler')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        searchInputs.forEach(function (input) {
-            input.addEventListener('input', function () {
-                searchText = input.value;
-                searchInputs.forEach(function (other) { if (other !== input) other.value = input.value; });
-                applyFilters();
-            });
-        });
-
-        document.querySelectorAll('.search-wrap button').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                const input = btn.closest('.search-wrap')?.querySelector('input');
-                searchText = input ? input.value : searchText;
-                applyFilters();
-                document.getElementById('urunler')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', function () {
-                mobileMenu.classList.toggle('active');
-            });
-            mobileMenu.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-
-        if (sortButton) {
-            sortButton.addEventListener('click', function () {
-                const sorted = products.slice().sort(function (a, b) {
-                    return sortAsc ? productPrice(a) - productPrice(b) : productPrice(b) - productPrice(a);
-                });
-                sorted.forEach(function (card) { productGrid.appendChild(card); });
-                sortButton.innerHTML = sortAsc ? '<i class="fa-solid fa-arrow-up-wide-short"></i> Fiyat: Düşükten Yükseğe' : '<i class="fa-solid fa-arrow-down-wide-short"></i> Fiyat: Yüksekten Düşüğe';
-                sortAsc = !sortAsc;
-                applyFilters();
-            });
-        }
-
-        applyFilters();
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17558342041"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-17558342041');
-    </script>
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17558342041/Ek2XCLXQgKkcEJmTvLRB',
-                'value': 1.0,
-                'currency': 'TRY',
-                'event_callback': callback
-            });
-
-            return false;
-        }
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn'); const mobileMenu = document.getElementById('mobileMenu'); if (mobileMenuBtn && mobileMenu) { mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('active')); }
+        function sendEvent(name) { if (typeof gtag === 'function') { gtag('event', name, { event_category: 'lead', event_label: 'meritay_anasayfa' }); } }
+        document.querySelectorAll('.track-call').forEach(el => el.addEventListener('click', () => sendEvent('telefon_tiklama')));
+        document.querySelectorAll('.track-whatsapp').forEach(el => el.addEventListener('click', () => sendEvent('whatsapp_tiklama')));
     </script>
 </body>
 

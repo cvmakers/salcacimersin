@@ -1,0 +1,1 @@
+Ana sayfa kullanıcı tarafından gönderilen haliyle korunmuştur. Alt sayfalar ana sayfadaki hizmet/yerel SEO yapısına göre hazırlanmıştır. Toplam 60 HTML sayfa vardır.

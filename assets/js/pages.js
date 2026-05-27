@@ -1,0 +1,2 @@
+document.querySelectorAll('.track-call').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','telefon_tiklama')}));
+document.querySelectorAll('.track-whatsapp').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','whatsapp_tiklama')}));
