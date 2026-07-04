@@ -222,348 +222,649 @@
   }
   </script>
 
-  <style>
-    :root {
-      --green: #159c57;
-      --green-dark: #0b6c3a;
-      --pink: #e65b8d;
-      --text: #102019;
-      --muted: #66746c;
-      --white: #ffffff;
-      --line: rgba(21, 156, 87, .14);
-      --shadow: 0 24px 70px rgba(12, 73, 39, .18);
-    }
+<style>
+  :root {
+    --green: #159c57;
+    --green-dark: #0b6c3a;
+    --pink: #e65b8d;
+    --text: #102019;
+    --muted: #66746c;
+    --white: #ffffff;
+    --line: rgba(21, 156, 87, .14);
+    --shadow: 0 20px 55px rgba(12, 73, 39, .15);
+  }
 
-    * {
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
 
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(230, 91, 141, .26), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(21, 156, 87, .24), transparent 38%),
-        linear-gradient(160deg, #fff7fb 0%, #effaf4 100%);
-    }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(230, 91, 141, .24), transparent 34%),
+      radial-gradient(circle at bottom right, rgba(21, 156, 87, .22), transparent 38%),
+      linear-gradient(160deg, #fff7fb 0%, #effaf4 100%);
+  }
 
-    body {
-      min-height: 100svh;
-    }
+  body {
+    min-height: 100svh;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
+  .page {
+    width: 100%;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+  }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    top: -105px;
+    right: -95px;
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background: rgba(230, 91, 141, .12);
+  }
+
+  .page::after {
+    content: "";
+    position: absolute;
+    bottom: -125px;
+    left: -115px;
+    width: 295px;
+    height: 295px;
+    border-radius: 50%;
+    background: rgba(21, 156, 87, .12);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 430px;
+    height: calc(100svh - 20px);
+    max-height: 760px;
+    min-height: 540px;
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .92);
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 16px 16px calc(24px + env(safe-area-inset-bottom));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .top {
+    text-align: center;
+  }
+
+  .logo-box {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 10px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 14px 34px rgba(20, 40, 30, .10);
+    display: grid;
+    place-items: center;
+    padding: 10px;
+  }
+
+  .logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: #eefaf3;
+    color: var(--green-dark);
+    font-size: 11.5px;
+    font-weight: 950;
+    margin-bottom: 10px;
+    border: 1px solid #d8f0e2;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(29px, 7.8vw, 38px);
+    line-height: .95;
+    letter-spacing: -1.3px;
+    font-weight: 950;
+    color: var(--text);
+  }
+
+  h1 span {
+    display: block;
+    color: var(--green);
+  }
+
+  .desc {
+    margin: 10px auto 0;
+    max-width: 345px;
+    font-size: 14.8px;
+    line-height: 1.32;
+    color: var(--muted);
+    font-weight: 850;
+  }
+
+  .seo-line {
+    margin: 8px auto 0;
+    max-width: 360px;
+    font-size: 12px;
+    line-height: 1.28;
+    color: #40564a;
+    font-weight: 850;
+  }
+
+.chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0 0;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #17482d;
+  border-radius: 999px;
+  padding: 5px 7px;
+  font-size: 10px;
+  font-weight: 950;
+  white-space: nowrap;
+}
+
+  .quick-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 12px 0 0;
+  }
+
+  .info {
+    border: 1px solid #e6efe9;
+    background: rgba(255, 255, 255, .86);
+    border-radius: 16px;
+    padding: 8px 6px;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 950;
+    color: #173c28;
+    box-shadow: 0 8px 18px rgba(20, 40, 30, .04);
+  }
+
+  .info small {
+    display: block;
+    margin-top: 2px;
+    font-size: 10px;
+    color: #7a8780;
+    font-weight: 850;
+  }
+
+  .actions {
+    display: grid;
+    gap: 12px;
+    margin-top: 28px;
+    padding-bottom: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 58px;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-size: 16.5px;
+    font-weight: 950;
+    color: #fff;
+    letter-spacing: .1px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    box-shadow:
+      0 16px 34px rgba(15, 35, 25, .14),
+      inset 0 1px 0 rgba(255, 255, 255, .36);
+    transition:
+      transform .18s ease,
+      filter .18s ease,
+      box-shadow .18s ease;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 21px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, .30),
+      rgba(255, 255, 255, 0) 48%
+    );
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .btn::after {
+    content: "";
+    position: absolute;
+    top: -70%;
+    left: -35%;
+    width: 55%;
+    height: 220%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, .28),
+      transparent
+    );
+    transform: rotate(18deg);
+    transition: .45s ease;
+    pointer-events: none;
+  }
+
+  .btn:hover::after {
+    left: 115%;
+  }
+
+  .btn:active {
+    transform: scale(.985) translateY(1px);
+    filter: brightness(.97);
+    box-shadow:
+      0 10px 22px rgba(15, 35, 25, .13),
+      inset 0 1px 0 rgba(255, 255, 255, .28);
+  }
+
+  .btn-order {
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .34), transparent 26%),
+      linear-gradient(135deg, #f0448d 0%, #ff6ca8 48%, #ff86b9 100%);
+  }
+
+  .btn-call {
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .34), transparent 26%),
+      linear-gradient(135deg, #0b7cff 0%, #0768e8 48%, #0457cc 100%);
+  }
+
+  .btn-wa {
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .32), transparent 26%),
+      linear-gradient(135deg, #20c76a 0%, #159c57 48%, #087d3f 100%);
+  }
+
+  .bottom-note {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 10.5px;
+    line-height: 1.25;
+    color: #6a7770;
+    font-weight: 850;
+  }
+
+  .bottom-note a {
+    color: var(--green-dark);
+    font-weight: 950;
+  }
+
+  @media (max-width: 480px) {
     .page {
-      width: 100%;
-      height: 100svh;
-      min-height: 100svh;
-      overflow: hidden;
-      display: flex;
+      padding: 10px;
       align-items: center;
-      justify-content: center;
-      padding: 16px;
-      position: relative;
-    }
-
-    .page::before {
-      content: "";
-      position: absolute;
-      top: -105px;
-      right: -95px;
-      width: 275px;
-      height: 275px;
-      border-radius: 50%;
-      background: rgba(230, 91, 141, .13);
-    }
-
-    .page::after {
-      content: "";
-      position: absolute;
-      bottom: -125px;
-      left: -115px;
-      width: 295px;
-      height: 295px;
-      border-radius: 50%;
-      background: rgba(21, 156, 87, .13);
     }
 
     .card {
-      width: 100%;
-      max-width: 430px;
-      height: calc(100svh - 32px);
-      max-height: 760px;
-      min-height: 560px;
-      background: rgba(255, 255, 255, .9);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(255, 255, 255, .92);
-      border-radius: 34px;
-      box-shadow: var(--shadow);
-      position: relative;
-      z-index: 2;
-      overflow: hidden;
-      padding: 22px 20px calc(20px + env(safe-area-inset-bottom));
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .top {
-      text-align: center;
+      height: calc(100svh - 20px);
+      min-height: auto;
+      max-height: none;
+      border-radius: 28px;
+      padding: 14px 16px calc(24px + env(safe-area-inset-bottom));
     }
 
     .logo-box {
-      width: 112px;
-      height: 112px;
-      margin: 0 auto 14px;
-      border-radius: 30px;
-      background: #fff;
-      box-shadow: 0 18px 45px rgba(20, 40, 30, .12);
-      display: grid;
-      place-items: center;
-      padding: 13px;
-    }
-
-    .logo-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
+      width: 74px;
+      height: 74px;
+      border-radius: 22px;
+      margin-bottom: 9px;
     }
 
     .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: #eefaf3;
-      color: var(--green-dark);
-      font-size: 12px;
-      font-weight: 950;
-      margin-bottom: 12px;
-      border: 1px solid #d8f0e2;
+      font-size: 11px;
+      padding: 6px 10px;
+      margin-bottom: 9px;
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(27px, 7.4vw, 40px);
+      font-size: 31px;
       line-height: .95;
-      letter-spacing: -1.4px;
-      font-weight: 950;
-      color: var(--text);
-    }
-
-    h1 span {
-      display: block;
-      color: var(--green);
+      letter-spacing: -1.2px;
     }
 
     .desc {
-      margin: 12px auto 0;
-      max-width: 345px;
-      font-size: 15px;
-      line-height: 1.42;
-      color: var(--muted);
-      font-weight: 800;
+      font-size: 14px;
+      line-height: 1.30;
+      margin-top: 8px;
     }
 
     .seo-line {
-      margin: 10px auto 0;
-      max-width: 360px;
-      font-size: 12px;
-      line-height: 1.35;
-      color: #40564a;
-      font-weight: 800;
+      font-size: 11.3px;
+      line-height: 1.25;
+      margin-top: 7px;
     }
 
     .chips {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin: 15px 0 0;
+      gap: 6px;
+      margin-top: 10px;
     }
 
     .chip {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: #17482d;
-      border-radius: 999px;
-      padding: 7px 9px;
-      font-size: 11px;
-      font-weight: 950;
-      white-space: nowrap;
+      font-size: 10.5px;
+      padding: 5px 8px;
     }
 
     .quick-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 9px;
-      margin: 16px 0 0;
+      margin-top: 11px;
+      gap: 8px;
     }
 
     .info {
-      border: 1px solid #e6efe9;
-      background: #fff;
-      border-radius: 17px;
-      padding: 11px 8px;
-      text-align: center;
+      padding: 7px 6px;
+      border-radius: 15px;
       font-size: 12px;
-      font-weight: 950;
-      color: #173c28;
     }
 
     .info small {
-      display: block;
-      margin-top: 3px;
-      font-size: 10px;
-      color: #7a8780;
-      font-weight: 850;
+      font-size: 9.7px;
     }
 
     .actions {
-      display: grid;
-      gap: 11px;
+      margin-top: 24px;
+      padding-bottom: 18px;
+      gap: 10px;
     }
 
     .btn {
-      width: 100%;
-      min-height: 60px;
-      border: 0;
+      min-height: 56px;
+      border-radius: 21px;
+      font-size: 16px;
+    }
+
+    .btn::before {
       border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 11px;
-      font-size: 17px;
-      font-weight: 950;
-      color: #fff;
-      box-shadow: 0 14px 32px rgba(0, 0, 0, .12);
-      transition: transform .18s ease, filter .18s ease;
-    }
-
-    .btn:active {
-      transform: scale(.98);
-      filter: brightness(.96);
-    }
-
-    .btn-order {
-      background: linear-gradient(135deg, var(--pink), #ff7aad);
-    }
-
-    .btn-call {
-      background: linear-gradient(135deg, #0d6efd, #0758ce);
-    }
-
-    .btn-wa {
-      background: linear-gradient(135deg, #20b65a, #128c45);
     }
 
     .bottom-note {
-      text-align: center;
-      margin-top: 10px;
+      display: none;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .page {
+      padding: 8px;
+    }
+
+    .card {
+      height: calc(100svh - 16px);
+      border-radius: 24px;
+      padding: 12px 12px calc(20px + env(safe-area-inset-bottom));
+    }
+
+    .logo-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 19px;
+      margin-bottom: 7px;
+      padding: 8px;
+    }
+
+    .badge {
+      font-size: 10.2px;
+      padding: 5px 9px;
+      margin-bottom: 7px;
+    }
+
+    h1 {
+      font-size: 27px;
+      letter-spacing: -1px;
+    }
+
+    .desc {
+      font-size: 12.7px;
+      line-height: 1.25;
+      margin-top: 7px;
+    }
+
+    .seo-line {
+      font-size: 10.5px;
+      line-height: 1.22;
+      margin-top: 6px;
+    }
+
+    .chips {
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      font-size: 9.8px;
+      padding: 5px 7px;
+    }
+
+    .quick-info {
+      margin-top: 8px;
+      gap: 6px;
+    }
+
+    .info {
+      padding: 6px 5px;
+      font-size: 10.8px;
+      border-radius: 13px;
+    }
+
+    .info small {
+      font-size: 9px;
+    }
+
+    .actions {
+      margin-top: 18px;
+      padding-bottom: 16px;
+      gap: 8px;
+    }
+
+    .btn {
+      min-height: 50px;
+      border-radius: 18px;
+      font-size: 14.8px;
+    }
+
+    .btn::before {
+      border-radius: 17px;
+    }
+  }
+
+  @media (max-height: 740px) {
+    .logo-box {
+      width: 66px;
+      height: 66px;
+      margin-bottom: 7px;
+    }
+
+    .badge {
+      margin-bottom: 7px;
+      font-size: 10.5px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .desc {
+      font-size: 12.8px;
+      margin-top: 7px;
+    }
+
+    .seo-line {
+      font-size: 10.8px;
+      margin-top: 6px;
+    }
+
+    .chips {
+      margin-top: 8px;
+    }
+
+    .chip {
+      font-size: 10px;
+      padding: 5px 7px;
+    }
+
+    .quick-info {
+      margin-top: 8px;
+    }
+
+    .info {
+      padding: 6px;
+    }
+
+    .actions {
+      margin-top: 16px;
+      padding-bottom: 14px;
+      gap: 8px;
+    }
+
+    .btn {
+      min-height: 50px;
+      font-size: 14.8px;
+      border-radius: 18px;
+    }
+
+    .btn::before {
+      border-radius: 17px;
+    }
+
+    .bottom-note {
+      display: none;
+    }
+  }
+
+  @media (max-height: 640px) {
+    .logo-box {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 5px;
+      border-radius: 16px;
+    }
+
+    .badge {
+      font-size: 9.8px;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .desc {
       font-size: 11.5px;
-      line-height: 1.35;
-      color: #6a7770;
-      font-weight: 850;
+      line-height: 1.22;
+      margin-top: 5px;
     }
 
-    .bottom-note a {
-      color: var(--green-dark);
-      font-weight: 950;
+    .seo-line {
+      font-size: 9.6px;
+      line-height: 1.2;
+      margin-top: 4px;
     }
 
-    @media (max-height: 660px) {
-      .page {
-        padding: 10px;
-      }
-
-      .card {
-        height: calc(100svh - 20px);
-        min-height: auto;
-        padding: 14px;
-        border-radius: 28px;
-      }
-
-      .logo-box {
-        width: 76px;
-        height: 76px;
-        margin-bottom: 8px;
-        border-radius: 22px;
-      }
-
-      .badge {
-        padding: 6px 9px;
-        font-size: 11px;
-        margin-bottom: 8px;
-      }
-
-      h1 {
-        font-size: 25px;
-      }
-
-      .desc {
-        font-size: 12.5px;
-        margin-top: 7px;
-      }
-
-      .seo-line {
-        font-size: 10.5px;
-        margin-top: 6px;
-      }
-
-      .chips {
-        gap: 5px;
-        margin-top: 9px;
-      }
-
-      .chip {
-        font-size: 10px;
-        padding: 5px 7px;
-      }
-
-      .quick-info {
-        margin-top: 9px;
-        gap: 7px;
-      }
-
-      .info {
-        padding: 7px;
-        font-size: 11px;
-        border-radius: 14px;
-      }
-
-      .btn {
-        min-height: 49px;
-        border-radius: 16px;
-        font-size: 15px;
-      }
-
-      .actions {
-        gap: 8px;
-      }
-
-      .bottom-note {
-        font-size: 10.5px;
-        margin-top: 7px;
-      }
+    .chips {
+      gap: 4px;
+      margin-top: 6px;
     }
 
-    @media (min-width: 768px) {
-      .card {
-        height: 720px;
-      }
+    .chip {
+      font-size: 9px;
+      padding: 4px 6px;
     }
-  </style>
+
+    .quick-info {
+      margin-top: 6px;
+    }
+
+    .info {
+      padding: 5px;
+      font-size: 10px;
+    }
+
+    .info small {
+      font-size: 8px;
+    }
+
+    .actions {
+      margin-top: 12px;
+      padding-bottom: 10px;
+      gap: 7px;
+    }
+
+    .btn {
+      min-height: 44px;
+      font-size: 13.6px;
+      border-radius: 16px;
+    }
+
+    .btn::before {
+      border-radius: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      height: 720px;
+    }
+  }
+  @media (max-width: 480px) {
+  .chips {
+    gap: 5px;
+    margin-top: 9px;
+  }
+
+  .chip {
+    font-size: 9.5px;
+    padding: 4px 6px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -592,12 +893,20 @@
           Yenişehir, Menteş, Pozcu, Mezitli, Akdeniz ve Toroslar çevresine gül buketi, orkide, çelenk ve saksı çiçeği siparişi.
         </p>
 
-        <div class="chips" aria-label="Mersin çiçekçi hizmet bölgeleri ve sipariş seçenekleri">
-          <span class="chip">Mersin Çiçekçi</span>
-          <span class="chip">Yenişehir Çiçekçi</span>
-          <span class="chip">Pozcu</span>
-          <span class="chip">Mezitli</span>
-        </div>
+    <div class="chips" aria-label="Mersin çiçekçi hizmet bölgeleri">
+  <span class="chip">Mersin Çiçekçi</span>
+  <span class="chip">Yenişehir</span>
+  <span class="chip">Menteş</span>
+  <span class="chip">Pozcu</span>
+  <span class="chip">Mezitli</span>
+  <span class="chip">Akdeniz</span>
+  <span class="chip">Toroslar</span>
+  <span class="chip">Forum Mersin</span>
+  <span class="chip">Viranşehir</span>
+  <span class="chip">Eğriçam</span>
+  <span class="chip">Kushimoto</span>
+  <span class="chip">Çiftlikköy</span>
+</div>
 
         <div class="quick-info">
           <div class="info">
@@ -612,38 +921,27 @@
       </div>
 
       <div>
-        <div class="actions">
-          <a
-            class="btn btn-order"
-            onclick="trackOrder(); trackWhatsApp();"
-            href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
-            target="_blank"
-            rel="noopener"
-            title="Mersin çiçek siparişi ver"
-          >
-            🌷 Çiçek Siparişi Ver
-          </a>
+<div class="actions">
+  <a
+    class="btn btn-order"
+    onclick="trackOrder(); trackWhatsApp();"
+    href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
+    target="_blank"
+    rel="noopener"
+    title="Mersin çiçek siparişi ver"
+  >
+    🌷 Çiçek Siparişi Ver
+  </a>
 
-          <a
-            class="btn btn-call"
-            onclick="trackCall();"
-            href="tel:+905425716844"
-            title="Meritay Botanik Mersin çiçekçi telefon ara"
-          >
-            📞 Hemen Ara
-          </a>
-
-          <a
-            class="btn btn-wa"
-            onclick="trackWhatsApp();"
-            href="https://wa.me/905425716844?text=Merhaba%2C%20Meritay%20Botanik%20%C3%BCzerinden%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
-            target="_blank"
-            rel="noopener"
-            title="WhatsApp çiçek siparişi"
-          >
-            💬 WhatsApp
-          </a>
-        </div>
+  <a
+    class="btn btn-call"
+    onclick="trackCall();"
+    href="tel:+905425716844"
+    title="Meritay Botanik çiçekçi telefon ara"
+  >
+    📞 Hemen Ara
+  </a>
+</div>
 
         <p class="bottom-note">
           Meritay Botanik · Menteş / Yenişehir / Mersin<br>
