@@ -46,28 +46,43 @@
       'phone_conversion_number': '0542 571 68 44'
     });
 
-    function trackCall(){
-      if (typeof gtag === 'function') {
-        gtag('event', 'telefon_tiklama', {
-          event_category: 'iletisim',
-          event_label: 'index_ara_butonu'
-        });
-        gtag('event', 'conversion', {
-          send_to: 'AW-17558342041/M7OACImbmbocEJmTvLRB'
-        });
+    // Google Ads/GA4 dönüşüm tıklamalarını gönderir ve ardından hedef bağlantıyı açar.
+    function gtagSendEvent(url, eventName, eventParams) {
+      const navigate = function () {
+        if (typeof url === 'string' && url) {
+          window.location.href = url;
+        }
+      };
+
+      if (typeof gtag !== 'function') {
+        navigate();
+        return false;
       }
+
+      gtag('event', eventName, {
+        ...(eventParams || {}),
+        event_callback: navigate,
+        event_timeout: 2000
+      });
+
+      return false;
     }
 
-    function trackWhatsApp(){
-      if (typeof gtag === 'function') {
-        gtag('event', 'whatsapp_tiklama', {
-          event_category: 'iletisim',
-          event_label: 'index_whatsapp_butonu'
-        });
-      }
+    function trackCall(url) {
+      return gtagSendEvent(url, 'telefon_tiklama', {
+        event_category: 'iletisim',
+        event_label: 'index_ara_butonu'
+      });
     }
 
-    function trackOrder(){
+    function trackWhatsApp(url) {
+      return gtagSendEvent(url, 'whatsapp_tiklama', {
+        event_category: 'iletisim',
+        event_label: 'index_whatsapp_butonu'
+      });
+    }
+
+    function trackOrder() {
       if (typeof gtag === 'function') {
         gtag('event', 'cicek_siparisi_tiklama', {
           event_category: 'siparis',
@@ -924,10 +939,8 @@
 <div class="actions">
   <a
     class="btn btn-order"
-    onclick="trackOrder(); trackWhatsApp();"
+    onclick="trackOrder(); return trackWhatsApp(this.href);"
     href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum."
-    target="_blank"
-    rel="noopener"
     title="Mersin çiçek siparişi ver"
   >
     🌷 Çiçek Siparişi Ver
@@ -935,7 +948,7 @@
 
   <a
     class="btn btn-call"
-    onclick="trackCall();"
+    onclick="return trackCall(this.href);"
     href="tel:+905425716844"
     title="Meritay Botanik çiçekçi telefon ara"
   >
