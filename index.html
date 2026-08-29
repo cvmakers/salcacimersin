@@ -32,65 +32,20 @@
   <meta name="twitter:description" content="Mersin’de aynı gün çiçek teslimatı için Meritay Botanik’i hemen ara veya WhatsApp’tan sipariş ver.">
   <meta name="twitter:image" content="https://cicekci.site/logo.png">
 
-  <!-- Google Tag / Google Ads Ölçüm -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2559CJDC1P"></script>
+  <!-- Google Tag / Google Ads ölçümü ve Consent Mode v2 -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-2559CJDC1P');
-    gtag('config', 'G-93SH8FZ00H');
-    gtag('config', 'AW-17558342041');
-    gtag('config', 'AW-17558342041/M7OACImbmbocEJmTvLRB', {
-      'phone_conversion_number': '0542 571 68 44'
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
     });
-
-    // Google Ads/GA4 dönüşüm tıklamalarını gönderir ve ardından hedef bağlantıyı açar.
-    function gtagSendEvent(url, eventName, eventParams) {
-      const navigate = function () {
-        if (typeof url === 'string' && url) {
-          window.location.href = url;
-        }
-      };
-
-      if (typeof gtag !== 'function') {
-        navigate();
-        return false;
-      }
-
-      gtag('event', eventName, {
-        ...(eventParams || {}),
-        event_callback: navigate,
-        event_timeout: 2000
-      });
-
-      return false;
-    }
-
-    function trackCall(url) {
-      return gtagSendEvent(url, 'telefon_tiklama', {
-        event_category: 'iletisim',
-        event_label: 'index_ara_butonu'
-      });
-    }
-
-    function trackWhatsApp(url) {
-      return gtagSendEvent(url, 'whatsapp_tiklama', {
-        event_category: 'iletisim',
-        event_label: 'index_whatsapp_butonu'
-      });
-    }
-
-    function trackOrder() {
-      if (typeof gtag === 'function') {
-        gtag('event', 'cicek_siparisi_tiklama', {
-          event_category: 'siparis',
-          event_label: 'index_cicek_siparisi_butonu'
-        });
-      }
-    }
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2559CJDC1P"></script>
+  <script defer src="/assets/site.js"></script>
 
   <script type="application/ld+json">
   {
@@ -891,9 +846,11 @@
   }
 </style>
 
+<link rel="stylesheet" href="/assets/site-enhancements.css">
+
 </head>
 
-<body>
+<body data-page="ana-sayfa">
   <main class="page">
     <section class="card" aria-label="Meritay Botanik Mersin çiçekçi iletişim ekranı">
 
@@ -972,6 +929,61 @@
           Telefon: <a href="tel:+905425716844">0542 571 68 44</a>
         </p>
       </div>
+
+      <section class="content-sections" aria-labelledby="siparis-basligi">
+        <h2 id="siparis-basligi">Mersin’de çiçek siparişi nasıl verilir?</h2>
+        <p class="content-intro">
+          Meritay Botanik’e telefon veya WhatsApp üzerinden ulaşarak ürün, teslimat bölgesi ve tarih bilgisini paylaşın. Stok ve teslimat uygunluğu teyit edildikten sonra sipariş ayrıntıları birlikte netleştirilir.
+        </p>
+
+        <div class="detail-grid" aria-label="Çiçek siparişi adımları">
+          <article class="detail-card">
+            <h3>1. Çiçeği belirleyin</h3>
+            <p>Gül buketi, orkide, çelenk, saksı çiçeği veya özel aranjman talebinizi iletin.</p>
+          </article>
+          <article class="detail-card">
+            <h3>2. Teslimatı paylaşın</h3>
+            <p>Alıcı adı, teslimat adresi, istenen tarih ve varsa kart notunu bildirin.</p>
+          </article>
+          <article class="detail-card">
+            <h3>3. Uygunluğu onaylayın</h3>
+            <p>Fiyat, stok ve teslimat zamanı teyit edildikten sonra siparişinizi tamamlayın.</p>
+          </article>
+        </div>
+
+        <h2>Mersin çiçekçi hizmetleri</h2>
+        <ul class="service-list">
+          <li>Gül buketi ve mevsim çiçekleri</li>
+          <li>Orkide ve saksı bitkileri</li>
+          <li>Açılış, düğün ve tören çelenkleri</li>
+          <li>Doğum günü ve özel gün aranjmanları</li>
+          <li>Yenişehir ve çevresine teslimat</li>
+          <li>Telefon ve WhatsApp ile hızlı sipariş</li>
+        </ul>
+
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Meritay Botanik nerede?</summary>
+            <p>Meritay Botanik, Menteş Mahallesi, 9. Cadde No:30 Yenişehir/Mersin adresinde hizmet veren çiçekçidir.</p>
+          </details>
+          <details>
+            <summary>Mersin’de aynı gün çiçek teslimatı yapılıyor mu?</summary>
+            <p>Evet. Stok, teslimat adresi ve yoğunluk durumuna göre aynı gün çiçek teslimatı yapılır. Kesin uygunluk için siparişten önce iletişime geçin.</p>
+          </details>
+          <details>
+            <summary>WhatsApp ile çiçek siparişi verilebilir mi?</summary>
+            <p>Evet. 0542 571 68 44 numarasından arayabilir veya WhatsApp üzerinden ürün ve teslimat bilgilerini iletebilirsiniz.</p>
+          </details>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        Meritay Botanik · Menteş Mahallesi, 9. Cadde No:30, Yenişehir / Mersin ·
+        <a href="tel:+905425716844">0542 571 68 44</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Meritay+Botanik+Mente%C5%9F+9.+Cadde+No%3A30+Yeni%C5%9Fehir+Mersin" target="_blank" rel="noopener">Yol tarifi</a>
+        · <a href="/gizlilik-politikasi.html">Gizlilik ve çerezler</a>
+      </footer>
 
     </section>
   </main>

@@ -32,65 +32,20 @@
   <meta name="twitter:description" content="Mersin’de aynı gün çiçek teslimatı için Meritay Botanik’i arayın. Stok ve yoğunluk durumuna göre Yenişehir ve yakın bölgelere hızlı teslimat.">
   <meta name="twitter:image" content="https://cicekci.site/logo.png">
 
-  <!-- Google Tag / Google Ads Ölçüm -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2559CJDC1P"></script>
+  <!-- Google Tag / Google Ads ölçümü ve Consent Mode v2 -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-2559CJDC1P');
-    gtag('config', 'G-93SH8FZ00H');
-    gtag('config', 'AW-17558342041');
-    gtag('config', 'AW-17558342041/M7OACImbmbocEJmTvLRB', {
-      'phone_conversion_number': '0542 571 68 44'
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
     });
-
-    // Google Ads/GA4 dönüşüm tıklamalarını gönderir ve ardından hedef bağlantıyı açar.
-    function gtagSendEvent(url, eventName, eventParams) {
-      const navigate = function () {
-        if (typeof url === 'string' && url) {
-          window.location.href = url;
-        }
-      };
-
-      if (typeof gtag !== 'function') {
-        navigate();
-        return false;
-      }
-
-      gtag('event', eventName, {
-        ...(eventParams || {}),
-        event_callback: navigate,
-        event_timeout: 2000
-      });
-
-      return false;
-    }
-
-    function trackCall(url) {
-      return gtagSendEvent(url, 'telefon_tiklama', {
-        event_category: 'iletisim',
-        event_label: 'index_ara_butonu'
-      });
-    }
-
-    function trackWhatsApp(url) {
-      return gtagSendEvent(url, 'whatsapp_tiklama', {
-        event_category: 'iletisim',
-        event_label: 'index_whatsapp_butonu'
-      });
-    }
-
-    function trackOrder() {
-      if (typeof gtag === 'function') {
-        gtag('event', 'cicek_siparisi_tiklama', {
-          event_category: 'siparis',
-          event_label: 'index_cicek_siparisi_butonu'
-        });
-      }
-    }
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2559CJDC1P"></script>
+  <script defer src="/assets/site.js"></script>
 
   <script type="application/ld+json">
   {
@@ -204,36 +159,6 @@
         "publisher": {
           "@id": "https://cicekci.site/#business"
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://cicekci.site/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Meritay Botanik nerede?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Meritay Botanik, Menteş Mahallesi, 9. Cadde No:30 Yenişehir/Mersin adresinde hizmet veren çiçekçidir."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Mersin’de aynı gün çiçek teslimatı yapılıyor mu?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Evet. Meritay Botanik, Mersin Yenişehir merkezli olarak stok ve yoğunluk durumuna göre aynı gün çiçek teslimatı yapar."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "WhatsApp ile çiçek siparişi verilebilir mi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Evet. Çiçek siparişi için 0542 571 68 44 numarasından arayabilir veya WhatsApp üzerinden sipariş verebilirsiniz."
-            }
-          }
-        ]
       }
     ]
   }
@@ -891,9 +816,11 @@
   }
 </style>
 
+<link rel="stylesheet" href="/assets/site-enhancements.css">
+
 </head>
 
-<body>
+<body data-page="ayni-gun-cicek-teslimati">
   <main class="page">
     <section class="card" aria-label="Aynı Gün Çiçek Teslimatı iletişim ve sipariş ekranı">
 
@@ -960,6 +887,22 @@
           Menteş / Yenişehir / Mersin
         </p>
       </div>
+
+      <section class="content-sections" aria-labelledby="teslimat-basligi">
+        <h2 id="teslimat-basligi">Aynı gün teslimat için gereken bilgiler</h2>
+        <p class="content-intro">Aynı gün teslimat; seçilen ürünün stoğuna, teslimat adresine ve gün içindeki yoğunluğa bağlıdır. En doğru teslimat saatini öğrenmek için sipariş öncesinde iletişime geçin.</p>
+        <div class="detail-grid">
+          <article class="detail-card"><h3>Ürün</h3><p>İstediğiniz çiçek türünü veya aranjman amacını paylaşın.</p></article>
+          <article class="detail-card"><h3>Adres</h3><p>Mahalle, açık adres ve alıcı iletişim bilgisini hazırlayın.</p></article>
+          <article class="detail-card"><h3>Zaman</h3><p>İstenen teslimat aralığını iletip uygunluğu teyit edin.</p></article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        Mersin ve Yenişehir için stok ve yoğunluğa göre teslimat ·
+        <a href="tel:+905425716844">0542 571 68 44</a> ·
+        <a href="/gizlilik-politikasi.html">Gizlilik ve çerezler</a>
+      </footer>
 
     </section>
   </main>
