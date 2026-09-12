@@ -58,7 +58,6 @@
   if (savedConsent) updateConsent(savedConsent);
 
   window.gtag?.('js', new Date());
-  window.gtag?.('config', 'G-2559CJDC1P');
   window.gtag?.('config', 'G-93SH8FZ00H');
   window.gtag?.('config', 'AW-17558342041');
   window.gtag?.('config', 'AW-17558342041/M7OACImbmbocEJmTvLRB', {
@@ -76,10 +75,26 @@
     return true;
   }
 
-  window.trackCall = () => sendInteraction('telefon_tiklama');
-  window.trackWhatsApp = () => sendInteraction('whatsapp_tiklama');
-  window.trackOrder = () => sendInteraction('cicek_siparisi_tiklama', {
-    event_category: 'siparis'
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+
+    const href = link.href;
+
+    if (href.startsWith('tel:')) {
+      sendInteraction('telefon_tiklama', {
+        link_url: href,
+        link_text: link.textContent.trim()
+      });
+      return;
+    }
+
+    if (/^https:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href)) {
+      sendInteraction('whatsapp_tiklama', {
+        link_url: href,
+        link_text: link.textContent.trim()
+      });
+    }
   });
 
   if (document.readyState === 'loading') {
