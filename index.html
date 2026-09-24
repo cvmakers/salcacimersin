@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/logo.png">
   <link rel="apple-touch-icon" href="/logo.png">
   <link rel="preload" as="image" href="/logo.png" fetchpriority="high">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
   <meta property="og:locale" content="tr_TR">
   <meta property="og:type" content="website">
@@ -848,6 +849,119 @@
 
 <link rel="stylesheet" href="/assets/site-enhancements.css">
 
+<style>
+  /* Kritik yerleşim: dış stil dosyası gecikse bile sayfanın tamamı erişilebilir kalsın. */
+  html,
+  body {
+    height: auto !important;
+    min-height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .page {
+    height: auto !important;
+    min-height: 100svh;
+    overflow: visible !important;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .card {
+    width: min(100%, 860px);
+    max-width: 860px;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 22px clamp(16px, 4vw, 42px) calc(30px + env(safe-area-inset-bottom));
+  }
+
+  .quick-info {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 16px 0 26px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 176px;
+    padding: 17px;
+    border: 1px solid #dceee3;
+    border-radius: 18px;
+    background: linear-gradient(155deg, #ffffff 0%, #f4fbf7 100%);
+    box-shadow: 0 10px 26px rgba(20, 70, 42, .06);
+  }
+
+  .product-card h3 {
+    margin: 0 0 7px;
+  }
+
+  .product-card p {
+    margin: 0 0 13px;
+  }
+
+  .product-card a {
+    margin-top: auto;
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 950;
+  }
+
+  .delivery-panel {
+    margin: 14px 0 26px;
+    padding: 18px;
+    border: 1px solid #d8eadf;
+    border-radius: 18px;
+    background: #eefaf3;
+  }
+
+  .delivery-panel h3 {
+    margin: 0 0 8px;
+  }
+
+  .delivery-panel p {
+    margin: 0;
+  }
+
+  .delivery-panel a {
+    color: var(--green-dark);
+    font-weight: 950;
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      padding: 8px;
+    }
+
+    .card {
+      padding: 14px 14px calc(24px + env(safe-area-inset-bottom));
+    }
+
+    .quick-info {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .quick-info .info:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .product-card {
+      min-height: 0;
+    }
+  }
+</style>
+
 </head>
 
 <body data-page="ana-sayfa">
@@ -885,11 +999,6 @@
   <a class="chip" href="/ayni-gun-cicek-teslimati.html">Aynı Gün Teslimat</a>
   <a class="chip" href="/telefonla-cicek-siparisi.html">Telefonla Sipariş</a>
   <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=Meritay+Botanik+Mente%C5%9F+9.+Cadde+No%3A30+Yeni%C5%9Fehir+Mersin" target="_blank" rel="noopener">Yol Tarifi</a>
-  <span class="chip">Menteş</span>
-  <span class="chip">Pozcu</span>
-  <span class="chip">Mezitli</span>
-  <span class="chip">Akdeniz</span>
-  <span class="chip">Toroslar</span>
 </div>
 
 
@@ -901,6 +1010,10 @@
           <div class="info">
             Hızlı Sipariş
             <small>Telefon / WhatsApp</small>
+          </div>
+          <div class="info">
+            Fiziki Mağaza
+            <small>Menteş / Yenişehir</small>
           </div>
         </div>
       </div>
@@ -951,6 +1064,49 @@
           </article>
         </div>
 
+        <h2>Mersin çiçekçi ürünleri</h2>
+        <p class="content-intro">
+          Güncel stoktaki çiçekleri, hazırlanmış buketleri ve teslimata uygun ürünleri WhatsApp üzerinden görebilirsiniz. Ürün seçmeden önce bütçenizi, teslimat bölgesini ve istediğiniz tarihi paylaşmanız yeterlidir.
+        </p>
+
+        <div class="product-grid" aria-label="Meritay Botanik çiçek ürünleri">
+          <article class="product-card">
+            <h3>Gül buketleri</h3>
+            <p>Kırmızı, beyaz ve farklı renk seçenekleriyle doğum günü, yıldönümü ve özel günler için gül buketleri.</p>
+            <a href="https://wa.me/905425716844?text=Merhaba%2C%20g%C3%BCl%20buketi%20se%C3%A7eneklerini%20ve%20g%C3%BCncel%20fiyatlar%C4%B1%20%C3%B6%C4%9Frenmek%20istiyorum.">Gül buketlerini sor →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>Orkide ve saksı çiçekleri</h3>
+            <p>Ev, ofis, yeni iş ve ziyaret hediyesi için orkide, antoryum ve farklı saksı bitkisi seçenekleri.</p>
+            <a href="https://wa.me/905425716844?text=Merhaba%2C%20orkide%20ve%20saks%C4%B1%20%C3%A7i%C3%A7e%C4%9Fi%20se%C3%A7eneklerini%20g%C3%B6rebilir%20miyim%3F">Orkideleri sor →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>Lilyum ve mevsim buketleri</h3>
+            <p>Lilyum, papatya, gerbera ve mevsim çiçekleriyle isteğinize göre hazırlanan renkli buketler.</p>
+            <a href="https://wa.me/905425716844?text=Merhaba%2C%20lilyum%20ve%20mevsim%20%C3%A7i%C3%A7e%C4%9Fi%20buketlerini%20g%C3%B6rebilir%20miyim%3F">Buketleri sor →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>Çelenk ve açılış çiçekleri</h3>
+            <p>Açılış, düğün, tören ve taziye için teslimat bilgisine göre hazırlanan çelenk seçenekleri.</p>
+            <a href="https://wa.me/905425716844?text=Merhaba%2C%20%C3%A7elenk%20sipari%C5%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Çelenk fiyatını sor →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>Özel gün aranjmanları</h3>
+            <p>Doğum günü, sevgiliye çiçek, yıldönümü ve kutlamalar için kişiye özel buket ve aranjmanlar.</p>
+            <a href="https://wa.me/905425716844?text=Merhaba%2C%20%C3%B6zel%20g%C3%BCn%20i%C3%A7in%20%C3%A7i%C3%A7ek%20aranjman%C4%B1%20yapt%C4%B1rmak%20istiyorum.">Aranjmanları sor →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>Hızlı telefonla sipariş</h3>
+            <p>Ürün, teslimat adresi ve kart notunu telefonda paylaşarak stok ve teslimat uygunluğunu öğrenin.</p>
+            <a href="tel:+905425716844">0542 571 68 44’ü ara →</a>
+          </article>
+        </div>
+
         <h2>Mersin çiçekçi hizmetleri</h2>
         <ul class="service-list">
           <li>Gül buketi ve mevsim çiçekleri</li>
@@ -960,6 +1116,14 @@
           <li>Yenişehir ve çevresine teslimat</li>
           <li>Telefon ve WhatsApp ile hızlı sipariş</li>
         </ul>
+
+        <h2>Mersin teslimat bölgeleri</h2>
+        <div class="delivery-panel">
+          <h3>Yenişehir merkezli, 15 km çevreye teslimat</h3>
+          <p>
+            Menteş, Pozcu, Yenişehir, Mezitli, Akdeniz ve Toroslar başta olmak üzere teslimat adresinin uygunluğunu sipariş öncesinde teyit ediyoruz. Mağazamız <strong>Menteş Mahallesi, 9. Cadde No:30, Yenişehir/Mersin</strong> adresindedir. <a href="https://www.google.com/maps/search/?api=1&amp;query=Meritay+Botanik+Mente%C5%9F+9.+Cadde+No%3A30+Yeni%C5%9Fehir+Mersin" target="_blank" rel="noopener">Haritada görüntüleyin.</a>
+          </p>
+        </div>
 
         <h2>Sık sorulan sorular</h2>
         <div class="faq-list">
