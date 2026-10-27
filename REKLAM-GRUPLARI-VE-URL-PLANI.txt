@@ -1,0 +1,50 @@
+MERİTAY BOTANİK – GOOGLE ADS REKLAM GRUBU / NİHAİ URL PLANI
+27 Ekim 2026 | Taslak, yayınlama onayı değildir.
+
+KAMPANYA: Meritay | Mersin | Arama + WhatsApp | 2026
+
+1) MERSİN ÇİÇEKÇİ (önce oluştur)
+Nihai URL: https://cicekci.site/
+Anahtar kelimeler:
+[mersin çiçekçi]
+"mersin çiçekçi"
+"çiçekçi mersin" (opsiyonel, yakın varyasyonlar zaten kapsanabilir)
+
+2) YENİŞEHİR ÇİÇEKÇİ
+Nihai URL: https://cicekci.site/mersin-yenisehir-cicekci.html
+Anahtar kelimeler:
+[yenişehir çiçekçi]
+"yenişehir çiçekçi"
+[mersin yenişehir çiçekçi]
+
+3) POZCU ÇİÇEKÇİ
+Nihai URL: https://cicekci.site/pozcu-cicekci.html
+Anahtar kelimeler:
+[pozcu çiçekçi]
+"pozcu çiçekçi"
+[mersin pozcu çiçekçi]
+
+4) MERSİN ÇİÇEK SİPARİŞİ (ayrı test)
+Nihai URL: https://cicekci.site/mersin-cicek-siparisi.html
+Anahtar kelimeler:
+[mersin çiçek siparişi]
+"mersin çiçek siparişi"
+"mersin çiçek gönder"
+
+REKLAM BAŞLIK ÖRNEKLERİ (her reklam grubuna göre değiştirin)
+Mersin: Mersin Çiçekçi | Meritay Botanik | Telefonla Sipariş Ver
+Yenişehir: Yenişehir Çiçekçi | Menteş’te Çiçekçi | Hemen Arayın
+Pozcu: Pozcu Çiçek Siparişi | Pozcu’ya Çiçek Gönder | Arayın veya Yazın
+Sipariş: Mersin Çiçek Siparişi | Telefonla Sipariş | WhatsApp’tan Yazın
+
+NOTLAR
+* Google Ads kalite puanı otomatik belirlenir; 10/10 garantisi yoktur.
+* Bu açılış sayfaları kalitenin yalnızca 'açılış sayfası deneyimi' ve reklam ilgililiği kısmına yardımcı olabilir.
+* Keyword Quality Score ilgili geçmiş trafik hacmi olmadan görüntülenmeyebilir.
+* Her anahtar kelime için aynısını tekrar eden kapı sayfaları yerine arama niyetine özel 4 sayfa hazırlanmıştır.
+* 15 km teslimat çevresi ve stok/saat teyidi korunmuştur. Pozcu’da fiziksel şube olduğu iddia edilmez.
+* Eski site.js içinde GA4/Ads etiketleri ve telefon / WhatsApp tıklama olayları korunmuştur.
+* Yayın öncesi tüm yeni URL'lerin HTTP 200 verdiğini ve GA4 Realtime/DebugView'da olayları ayrıca doğrulayın.
+* Hesap düzeyi dönüşüm işlemleri değiştirilmemiştir. Reklam butonundaki mesaj ve çağrı dönüşümleri site etiketlerinden ayrıdır.
+* ZIP içeriğini alan adı kök dizinine yükleyin (index.html kökte olmalı); önce yedek alın.
+* CNAME alan adı cicekci.site olarak korunmuştur.
