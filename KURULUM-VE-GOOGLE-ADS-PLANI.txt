@@ -1,0 +1,56 @@
+MERİTAY BOTANİK — GOOGLE ADS KALİTE PUANI / AÇILIŞ SAYFASI OPTİMİZASYONU
+6 Kasım 2026 | Tamamlanan DOSYA değişiklikleri, Google Ads hesabında canlı değişiklik değildir.
+
+KONTROL EDİLEN EKRAN (6 Kasım 2026): 215 gösterim, 16 tıklama, TO %7,44,
+ort. TBM ₺37,15, maliyet ₺594,44, görünen dönüşüm 0.
+Kalite: [çiçekçi] 2/10, [pozcu çiçekçi] 3/10, diğerleri 4–6/10.
+Ortak sorun: açılış sayfası deneyimi ortalamanın altında.
+
+SİTEDE HAZIRLADIKLARIMIZ
+1. Mevcut ana sayfa ile Mersin / Yenişehir / Pozcu / sipariş sayfalarına örnek ürün fotoğrafları.
+2. Mobil ve masaüstü ürün alanı, hızlı arama/WhatsApp iletişim akışı ve teslimat uygunluğu bölümü.
+3. En yakın çiçekçi sayfasında abartılı yakınlık iddialarının düzeltilmesi.
+4. Yeni https://cicekci.site/acik-cicekci.html sayfası; 7/24 iletişim / teslimat koşulu ayrımı.
+5. Arama niyetine özel meta veriler, sitemap güncellemesi ve yardımcı sayfalara ürün örnekleri.
+6. GA4 telefon ve WhatsApp tıklaması olaylarına yöntem metadatası eklendi.
+7. Mevcut G-93SH8FZ00H ve AW-17558342041 ölçüm kimlikleri aynen korundu.
+
+GÖRSELLER: Bu proje için üretilmiş örnek fotoğraflardır. Ürün stok ve fiyatlarının temsilcisi değildir.
+Gerçek mağaza fotoğrafları ve satılabilen ürünlerin gerçek fiyatlarıyla değiştirilmesi önerilir.
+
+GOOGLE ADS HESABINDA YAPILMASI GEREKENLER (OTOMATİK YAPILMADI)
+1. Önce mevcut kampanyanın yedeğini Google Ads Editor'dan dışa aktarın.
+2. Mevcut tek reklam grubunu 7 arama niyeti grubuna ayırın; eski grupla yenisini
+   aynı anda aynı kelimelere açık tutmayın. CSV'ler uygulama taslağıdır.
+3. Her gruba ayrı responsive search ad (15 başlık, 4 açıklama) ve tek ilgili final URL atayın.
+   'Açık çiçekçi' yeni sayfası yayınlanmadan Google Ads'de final URL olarak seçilmesin.
+4. Önce Phrase/Exact kullanın; [çiçekçi] genel grubunu düşük bütçe ile ayrı test edin.
+   Geniş eşleme varsa arama terimlerini inceleyin. Yer hedefini 15 km gerçek hizmet alanında
+   ve 'Bulunan veya düzenli bulunan kişiler' seçeneğiyle kontrol edin.
+5. Uzantılar: arama, işletme konumu, Mersin Çiçekçi, Yenişehir Çiçekçi, Pozcu,
+   Çiçek Siparişi ve Açık Çiçekçi site bağlantıları. Google İşletme Profili doğrulayın.
+6. Dönüşüm: GA4 DebugView'da telefon_tiklama ve whatsapp_tiklama olaylarını test edin.
+   Google Ads > Hedefler > Dönüşümler bölümünde bu olayların içe aktarma durumunu doğrulayın.
+   Yalnız tıklama gerçekleşen arama / satın alma değildir; raporda doğru adlandırın.
+   Gerçek telefon aramalarını Google yönlendirme numarası/aramayla ayrıca ölçün.
+   Çift sayım olmaması için birincil/ikincil dönüşüm eylemlerini dikkatle seçin.
+7. Tek bir günün 0 dönüşüm verisine bakıp stratejiyi agresif biçimde değiştirmeyin.
+   Son 30 günü, arama terimleri ve reklam grubu performansını karşılaştırın.
+8. Yeni dosyaları GitHub Pages repo KÖKÜNE veya hosting document root'a yükleyin.
+   Eski site ve DNS/CNAME yedeği alın. GitHub Pages için mevcut CNAME korunmuştur.
+9. Yayında HTTP 200, mobil görünüm, telefon ve WhatsApp URL, SSL, GA4 Realtime,
+   Ads Tag Assistant ve Search Console doğrulaması yapın.
+10. Kalite puanı hemen güncellenmeyebilir; 7-14 günde bile 8/10 garantisi yoktur.
+    Google Ads Kalite Puanı tanısaldır; öncelik geçerli telefon ve sipariş elde etmektir.
+
+KONTROL LİSTESİ / HEDEF URLLER
+Mersin çiçekçi .......... https://cicekci.site/
+Yenişehir çiçekçi ....... https://cicekci.site/mersin-yenisehir-cicekci.html
+Pozcu çiçekçi ........... https://cicekci.site/pozcu-cicekci.html
+Mersin çiçek siparişi ... https://cicekci.site/mersin-cicek-siparisi.html
+En yakın çiçekçi ........ https://cicekci.site/en-yakin-cicekci.html
+Açık çiçekçi ............ https://cicekci.site/acik-cicekci.html
+Genel 'çiçekçi' ......... https://cicekci.site/ (ayrı reklam grubunda test)
+
+Not: Site dosyaları bu pakette hazırlanmıştır; canlı Google Ads hesabına doğrudan erişilip
+reklam grubu veya bütçe değiştirilmemiştir. Site de henüz yayınlanmamıştır.

@@ -1,0 +1,18 @@
+# UYGUN OLMAYAN ARAMA NİYETİ – Önce Arama Terimleri raporunda doğrulayın.
+# Negatif kelime eklemek kalite puanını doğrudan 8/10 yapmaz; gereksiz maliyeti azaltabilir.
+"çiçek çizimi"
+"çiçek resmi"
+"çiçek fotoğrafı"
+"çiçek boyama"
+"çiçek dövmesi"
+"çiçek duvar kağıdı"
+"çiçek nasıl çizilir"
+"çiçek yetiştirme"
+"çiçek bakımı eğitimi"
+"çiçekçi iş ilanı"
+"çiçekçi iş başvurusu"
+"çiçekçi eleman aranıyor"
+"çiçekçi kursu"
+"çiçekçi maaşı"
+"çiçekçi açma maliyeti"
+# YAPAY ÇİÇEK, ÇELENK VE ÇİÇEK FİYATLARI: Mağaza bunları satıyorsa NEGATİFE EKLEMEYİN.

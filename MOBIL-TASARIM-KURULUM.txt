@@ -1,0 +1,25 @@
+MERİTAY BOTANİK — MOBİL / MASAÜSTÜ GÖRÜNÜM DÜZENLEMESİ
+6 Kasım 2026
+
+DÜZELTİLENLER
+- Mobil ekrandaki aşırı uzun başlık, sıkışık CTA butonları ve büyük pembe buton daha ferah düzene alındı.
+- İçeriği ve ürün fotoğrafını kapatan sabit alt telefon/WhatsApp barı kaldırıldı.
+- Mobilde ana CTA: WhatsApp’tan Sipariş / Hemen Ara. Üst menüde telefon bağlantısı da var.
+- Ürün fotoğrafı, kısa bilgi, telefon ve mağaza adresi ayrı bölümlerde düzenlendi.
+- Tüm ana arama açılış sayfalarında aynı tasarım uygulandı.
+- Üç eski açılış sayfasının kutulu, renkli tasarımı sade ve tutarlı hale getirildi.
+- Google Ads URL, canonical/SEO başlıkları ve mevcut GA4/Ads kimlikleri korunmuştur.
+
+DOSYA YÜKLEME
+1. Yayındaki site dosyalarınızı yedekleyin.
+2. ZIP içeriğini klasör yapısını koruyarak sitenin kök dizinine yükleyin.
+   assets/meritay-redesign.css dosyası da mutlaka yüklenmeli.
+3. Tarayıcı önbelleğini yenileyin (Ctrl+Shift+R); mobilde kontrol edin.
+4. Telefon ve WhatsApp butonlarını test edin.
+5. Google Ads kampanyasında URL değişikliği gerekmez. Bu paket Google Ads hesabında değişiklik yapmaz.
+6. Görseller temsili örneklerdir, gerçek mağaza ürün stokunu veya fiyatını yansıtmaz.
+
+ÖNEMLİ
+- Bu site kodu düzenlemesi canlı siteye yüklenmiş değildir.
+- Dönüşüm bağlantıları ve mevcut ölçüm kodları korunmuştur, canlı hesapta Tag Assistant/DebugView testi gerekir.
+- Kalite puanının 8/10 olması garanti edilemez.

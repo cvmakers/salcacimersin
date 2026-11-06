@@ -1,0 +1,179 @@
+/* Meritay Botanik — temiz ve dönüşüm odaklı responsive revizyon, 2026-11-06.
+   Eski tarayıcılar için ek JS / harici font yok. */
+:root { --ink:#163e31; --ink-deep:#102f26; --rose:#a24661; --rose-light:#fbebf0; --cream:#fcfaf7; --line:#e1e8e1; --muted:#52695d; }
+html {scroll-padding-top:88px}
+body:not(.layout-simple) {background:#fcfaf7;color:#163729;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;overflow-x:hidden;}
+body:not(.layout-simple) .wrap {width:min(calc(100% - 48px),1140px)}
+.topbar{background:#174332;color:#fff;font-size:12px;font-weight:650;letter-spacing:.005em;padding:8px 14px}
+.header {position:sticky;top:0;z-index:40;background:rgba(255,255,255,.98);border-bottom:1px solid #e7eae5;box-shadow:0 4px 18px rgba(22,47,35,.025)}
+.header-inner {min-height:75px}
+.brand {font-size:18px;gap:9px}
+.brand img {width:50px;height:50px}
+.brand small{font-size:11px;font-weight:500;letter-spacing:0}
+.nav {gap:25px;font-size:13px}
+.nav a{transition:color .15s}
+.nav .nav-call{border:1px solid #d6e1d6;background:#f9fcf9;border-radius:999px;padding:11px 16px;font-weight:750}
+.hero {padding:clamp(28px,5vw,62px) 0 clamp(34px,5vw,65px)}
+.hero-grid {grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(28px,5.5vw,72px);align-items:center}
+.hero-copy {min-width:0}
+.eyebrow{font-size:11.5px;color:#35664c;letter-spacing:.045em;line-height:1.45}
+.eyebrow::before{width:7px;height:7px;flex:none}
+h1 {font-size:clamp(39px,4.8vw,61px);letter-spacing:-.052em;line-height:1.08;margin:15px 0 18px;font-weight:800}
+h1 em{display:block;color:#a24560;font-style:normal}
+.lead {font-size:clamp(16px,1.5vw,18px);line-height:1.7;color:#4e6257;max-width:555px;margin:0 0 25px}
+.cta-row {display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);gap:10px;max-width:510px}
+.cta-row .button{min-width:0;min-height:56px;padding:11px 12px;font-size:15px;font-weight:750;border-radius:12px;box-shadow:none}
+.button.primary{background:#184735;color:#fff}
+.button.primary:hover{background:#28694d}
+.button.secondary{background:#fff;border:1px solid #bdcfc0;color:#184735}
+.button:focus-visible,.explore-link:focus-visible,.nav a:focus-visible{outline:3px solid #a54d69;outline-offset:3px}
+.quick-facts {display:flex;align-items:center;gap:7px 17px;flex-wrap:wrap;margin:17px 0 0;color:#3c6650;font-size:12px;font-weight:650}
+.quick-facts span::before {content:'✓';color:#218358;font-size:14px;font-weight:850;margin-right:5px}
+.explore-link{display:inline-block;color:#9d405d;font-size:13px;font-weight:760;text-decoration:underline;text-underline-offset:4px;margin:15px 0 0}
+.hero-note {color:#738177;font-size:12px;line-height:1.5;margin:10px 0 0;max-width:500px}
+.order-panel {padding:0;border:1px solid #e4e9e1;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 20px 55px rgba(21,51,35,.09)}
+.order-panel .hero-floral {margin:0;position:relative;border-radius:0;overflow:hidden;background:#f5efea}
+.order-panel .hero-floral img {width:100%;height:330px;object-fit:cover;object-position:center 42%;display:block}
+.order-panel .hero-floral figcaption {position:absolute;bottom:11px;left:11px;color:#455248;background:rgba(255,255,255,.94);border:1px solid #fff;border-radius:999px;font-size:10.5px;font-weight:600;padding:6px 11px;box-shadow:0 2px 8px #0001}
+.panel-bottom{padding:20px 24px 23px}
+.panel-top {margin:0 0 13px;gap:10px}
+.panel-top img {width:47px;height:47px;object-fit:contain}
+.panel-top strong {font-size:17px;color:#173c2d}
+.panel-top small {font-size:12px;color:#687a6e}
+.order-panel h2{font-size:22px;line-height:1.24;letter-spacing:-.025em;margin:0 0 6px}
+.order-panel p{font-size:13px;color:#607064;margin:0 0 12px;line-height:1.55}
+.panel-phone{font-size:18px;display:inline-flex;align-items:center;gap:7px;font-weight:800;letter-spacing:-.01em;margin:0 0 12px;text-decoration:underline;text-underline-offset:4px}
+.panel-phone::before{content:'☎';font-size:17px}
+.panel-address{border-top:1px solid #e8ece7;padding:12px 0 0;color:#758177;font-size:12px;line-height:1.45}
+.proof {border-color:#e6ece5}
+.proof-item strong{color:#193e30}
+.benefit-strip{background:#f4f8f2;border-color:#e3ece0}
+.section{padding-block:clamp(42px,6vw,74px)}
+.service-card,.intent-card,.step,.store-card,.delivery-check{border-color:#e1e9e0;border-radius:17px;box-shadow:0 3px 15px rgba(24,57,39,.025)}
+.service-card{padding:16px}
+.service-card .product-photo{height:220px;margin:0 0 15px;border-radius:13px}
+.service-card h3{font-size:19px}
+.service-card p{line-height:1.6}
+.local-links a:hover,.landing-links a:hover{border-color:#b97186}
+.faq details{background:#fff}
+.closing{background:#173d2f}
+.mobile-actions{display:none!important}
+footer{padding-bottom:34px}
+.consent-panel{z-index:100;}
+@media (max-width:920px){
+  .hero-grid{gap:25px}
+  .order-panel .hero-floral img{height:270px}
+  .panel-bottom{padding:18px 18px 20px}
+  .order-panel h2{font-size:19px}
+  .nav{gap:14px}
+}
+@media (max-width:680px){
+  body:not(.layout-simple) .wrap {width:min(calc(100% - 32px),520px)}
+  .topbar{font-size:10.5px;line-height:1.35;padding:7px 8px}
+  .header-inner{min-height:62px;gap:8px}
+  .brand{font-size:15px;gap:6px;line-height:1.1}
+  .brand img{width:38px;height:38px}
+  .brand small{font-size:10px;margin-top:3px}
+  .nav > a:not(.nav-call){display:none}
+  .nav .nav-call{font-size:11.5px;padding:8px 11px;white-space:nowrap}
+  .hero{padding:22px 0 32px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:21px}
+  .eyebrow{font-size:10.5px;letter-spacing:.01em;max-width:100%;line-height:1.5;text-transform:none}
+  h1{font-size:clamp(32px,8.4vw,43px);line-height:1.08;margin:11px 0 13px;letter-spacing:-.045em}
+  h1 em{display:block}
+  .lead{font-size:14.5px;line-height:1.59;margin-bottom:17px;max-width:500px}
+  .cta-row{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(0,.83fr);gap:8px;max-width:none}
+  .cta-row .button{font-size:13px;min-height:49px;padding:8px 7px;border-radius:10px;flex:auto;white-space:normal}
+  .quick-facts{display:flex;gap:6px 12px;margin-top:13px;font-size:10.5px}
+  .quick-facts span::before{margin-right:3px}
+  .explore-link{font-size:12px;margin-top:10px}
+  .hero-note{font-size:11px;line-height:1.4;margin:8px 0 0}
+  .order-panel{border-radius:18px;box-shadow:0 12px 35px rgba(25,56,35,.07)}
+  .order-panel .hero-floral img{height:clamp(180px,52vw,240px);object-position:center 41%}
+  .order-panel .hero-floral figcaption{font-size:10px;bottom:8px;left:8px;padding:5px 8px}
+  .panel-bottom{padding:13px 15px 15px}
+  .panel-top{margin:0 0 6px;gap:9px}
+  .panel-top img{width:38px;height:38px}
+  .panel-top strong{font-size:14px}
+  .panel-top small{font-size:11px}
+  .order-panel h2{font-size:17px;margin:4px 0}
+  .order-panel p{font-size:12px;line-height:1.5;margin:0 0 7px}
+  .panel-phone{font-size:14px;margin:3px 0 7px}
+  .panel-address{padding-top:9px;font-size:11px}
+  .proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+  .proof-item{padding:12px!important;border-bottom:1px solid var(--line);min-width:0}
+  .proof-item strong{font-size:13px}
+  .proof-item span{font-size:11px}
+  .proof-item:last-child{grid-column:1/-1;border-bottom:0}
+  .benefit-strip .wrap{gap:6px 13px;flex-wrap:wrap;font-size:11px}
+  .section{padding-block:40px}
+  h2{font-size:clamp(27px,7vw,35px)}
+  .services{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .service-card{padding:10px;border-radius:14px}
+  .service-card .product-photo{height:clamp(118px,35vw,175px);border-radius:10px;margin:0 0 11px}
+  .service-card h3{font-size:15px;line-height:1.25;margin-bottom:7px}
+  .service-card p{font-size:12px;line-height:1.5;margin-bottom:8px}
+  .service-card a{font-size:11.5px;min-height:35px;line-height:1.3}
+  .section-head{display:block}
+  .section-head .text-link{margin-top:12px}
+  .intent-cards,.steps{grid-template-columns:1fr}
+  .delivery-grid,.faq-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+  .delivery-grid > *, .faq-grid > * {min-width:0;max-width:100%}
+  .store-card .button{max-width:100%;white-space:normal}
+  .delivery-check{max-width:100%;min-width:0}
+  .store-card{margin-top:0}
+  .faq details{padding:13px 14px}
+  .closing-grid{display:block}
+  .closing .button{margin-top:14px}
+  .consent-panel{bottom:12px;align-items:stretch;flex-direction:column;gap:9px;padding:11px;width:min(calc(100% - 24px),500px)}
+  .consent-actions{display:grid;grid-template-columns:1fr 1fr}
+  footer{padding:22px 0 28px}
+}
+@media (max-width:340px){
+  .brand{font-size:13px}
+  .brand small{font-size:9px}
+  .cta-row .button{font-size:12px}
+  .quick-facts{font-size:10px}
+  .services{grid-template-columns:1fr}
+  .service-card .product-photo{height:180px}
+}
+/* Harmonize the three service mini-sites with main Meritay identity */
+body.layout-simple {font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;background:#f8faf6!important;min-height:100vh;overflow-x:hidden!important;}
+body.layout-simple .page{width:100%;display:block;min-height:100vh;height:auto;overflow:visible;padding:35px 18px 45px;}
+body.layout-simple .page::before,body.layout-simple .page::after{display:none}
+body.layout-simple .card{width:min(100%,850px);margin:0 auto;padding:clamp(20px,4vw,40px);display:block;min-height:0;height:auto;max-height:none;overflow:visible;border:1px solid #e1e8df;border-radius:22px;background:#fff;box-shadow:0 15px 55px rgba(15,49,30,.08)}
+body.layout-simple .logo-box{width:76px;height:76px;box-shadow:none;border:1px solid #e6eee6;border-radius:18px}
+body.layout-simple .badge{background:#eaf3ea;color:#184633;border-color:#d8e8d8}
+body.layout-simple h1{color:#12392a;font-size:clamp(27px,4.7vw,43px);line-height:1.11;letter-spacing:-.04em}
+body.layout-simple h1 span{color:#a44760}
+body.layout-simple .desc{font-size:clamp(14px,1.6vw,16px);font-weight:500;line-height:1.55;max-width:660px;margin-top:13px}
+body.layout-simple .seo-line{font-size:13px;font-weight:500;line-height:1.55;max-width:650px}
+body.layout-simple .chips{gap:8px;margin-top:22px}
+body.layout-simple .chip{font-size:12px;font-weight:700;padding:8px 12px;color:#214d37;border:1px solid #d9e5da}
+body.layout-simple .quick-info{max-width:600px;margin:23px auto 0;gap:12px}
+body.layout-simple .info{padding:13px 9px;border-radius:12px;font-size:14px;box-shadow:none}
+body.layout-simple .info small{font-size:11px;margin-top:4px}
+body.layout-simple .actions{width:min(100%,600px);grid-template-columns:1fr 1fr;gap:10px;margin:21px auto 8px;padding:0}
+body.layout-simple .btn{min-height:53px;border-radius:11px;background:#174b36;color:#fff;font-size:14px;box-shadow:none;border:0;text-align:center;padding:10px}
+body.layout-simple .btn-call{background:#fff;color:#164531;border:1px solid #aecdb6}
+body.layout-simple .btn:before,body.layout-simple .btn:after{display:none}
+body.layout-simple .mini-product-preview{margin-top:26px}
+body.layout-simple .mini-flowers{gap:10px}
+body.layout-simple .mini-flowers img{height:clamp(100px,25vw,190px);border-radius:13px}
+body.layout-simple .content-sections{margin-top:27px;padding-top:22px}
+body.layout-simple .content-sections h2{font-size:clamp(22px,3.5vw,30px)}
+body.layout-simple .site-footer{margin-top:26px}
+@media(max-width:600px){
+ body.layout-simple .page{padding:12px 10px 24px}
+ body.layout-simple .card{padding:20px 15px;border-radius:17px}
+ body.layout-simple .logo-box{width:66px;height:66px}
+ body.layout-simple .chips{gap:6px}
+ body.layout-simple .chip{font-size:10.5px;padding:7px 9px}
+ body.layout-simple .quick-info{gap:8px}
+ body.layout-simple .info{font-size:12px;padding:9px}
+ body.layout-simple .actions{grid-template-columns:1fr 1fr;gap:8px}
+ body.layout-simple .btn{font-size:12px;min-height:53px;line-height:1.3;padding:7px}
+ body.layout-simple .mini-flowers img{height:clamp(92px,28vw,130px)}
+ body.layout-simple .detail-grid,body.layout-simple .service-list{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

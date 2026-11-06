@@ -84,7 +84,11 @@
     if (href.startsWith('tel:')) {
       sendInteraction('telefon_tiklama', {
         link_url: href,
-        link_text: link.textContent.trim()
+        link_text: link.textContent.trim(),
+        contact_method: 'telephone',
+        lead_source: 'website_click',
+        // Bu bir telefon butonuna tıklamadır; gerçekleşen arama olarak raporlanmamalıdır.
+        engagement_type: 'click'
       });
       return;
     }
@@ -92,7 +96,10 @@
     if (/^https:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href)) {
       sendInteraction('whatsapp_tiklama', {
         link_url: href,
-        link_text: link.textContent.trim()
+        link_text: link.textContent.trim(),
+        contact_method: 'whatsapp',
+        lead_source: 'website_click',
+        engagement_type: 'click'
       });
     }
   });
