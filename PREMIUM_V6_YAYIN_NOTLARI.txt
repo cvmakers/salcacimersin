@@ -1,0 +1,15 @@
+MERİTAY BOTANİK — PREMIUM V6
+
+Referans görseldeki tarzı esas alan yeni mobil vitrin. Önceki V4/V5 tasarımı üst üste boyamak yerine yeni header, kategori rayı ve editorial bannerlar inşa edildi.
+
+YAYIN:
+1. ZIP'i aç ve tüm içerikleri GitHub Pages reposunun köküne kopyala; CNAME korunmalı.
+2. Commit & Push yap.
+3. Güncel görünüm için mobilde gizli sekme ve önbellek temizliği ile test et.
+4. Google Ads [çiçekçi] kampanyasının nihai URL'si https://cicekci.site/cicekci.html olarak kalmalı.
+5. Menü, kategori filtreleri, telefon, WhatsApp, sitemap ve mevcut dönüşüm entegrasyonu korunmuştur.
+
+GERÇEKÇİ BİLGİ NOTLARI:
+Bu sitedeki çiçek fotoğrafları önceki kaynak dosyalardan alınmıştır; yeni gerçek çekim ve güncel fiyat olmadığı için online sepet/ödeme varmış gibi gösterilmedi. Teslimat, stok ve fiyat mağazayla teyit edilir.
+
+Kalite puanı 2/10'dan otomatik yükselmez. Beklenen TO, reklam alaka düzeyi ve açılış sayfası deneyimi Google Ads üzerinden ayrıca izlenmelidir. ZIP canlı Google Ads hesabını değiştirmez.
