@@ -1,0 +1,1 @@
+Sag/sol kayma ve mobil duzen sabitligi icin category alani yatay kaymadan sabit 4 kolon yapildi; overflow-x kapatildi; alt menu ve hero genislikleri sabitlendi.

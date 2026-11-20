@@ -141,3 +141,37 @@ body{background:#fff;color:var(--ink);font-family:Arial,'Helvetica Neue',sans-se
 .premium-feature h1 .premium-kicker{display:block;font-family:Arial,sans-serif;font-weight:800;letter-spacing:.13em;font-size:10px;line-height:1.55;margin-bottom:13px;color:#9a6c7a}
 @media(max-width:700px){.category-section{overflow:hidden}.category-scroll{margin-right:0;padding-right:14px}.premium-feature h1 .premium-kicker{font-size:8.5px;line-height:1.55;letter-spacing:.12em;margin-bottom:9px}}
 @media(max-width:355px){.premium-feature h1 .premium-kicker{font-size:7.5px}}
+
+
+/* ===== V7 horizontal stability fixes ===== */
+html,body{max-width:100%;overflow-x:hidden}
+body{overscroll-behavior-x:none}
+.site-wrap,.header-main,.search-wrap,.category-section,.premium-editorial,.products-section,.order-section,.local-section,.faq-section,.final-cta,.site-footer,.mobile-bottom{max-width:100%}
+img{max-width:100%;height:auto}
+@media(max-width:700px){
+  .site-wrap{width:calc(100% - 32px)!important;max-width:calc(100% - 32px)!important}
+  .header-main{overflow:hidden}
+  .brand{max-width:calc(100% - 96px)!important}
+  .site-search{width:100%;max-width:100%;min-width:0}
+  .site-search input{min-width:0;width:100%}
+  .category-section{overflow:hidden}
+  .category-scroll{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;overflow:hidden!important;padding:0 0 16px 0!important;margin:0!important;justify-content:stretch}
+  .category-item{flex:unset!important;min-width:0;width:100%;max-width:none;gap:6px}
+  .category-photo{width:min(100%,72px);height:auto;aspect-ratio:1/1;margin-inline:auto}
+  .category-name{min-height:26px;text-align:center;word-break:break-word}
+  .premium-editorial{overflow:hidden}
+  .premium-feature{width:100%;max-width:100%;grid-template-columns:52% 48%}
+  .premium-photo,.premium-feature-copy{min-width:0}
+  .premium-feature p,.premium-feature h1,.premium-feature h2{max-width:100%}
+  .products-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%}
+  .product-card{min-width:0}
+  .mobile-bottom{width:100%;left:0;right:0;overflow:hidden}
+  .mobile-bottom a{min-width:0}
+}
+@media(max-width:355px){
+  .site-wrap{width:calc(100% - 24px)!important;max-width:calc(100% - 24px)!important}
+  .category-scroll{gap:8px}
+  .category-photo{width:min(100%,66px)}
+  .brand{max-width:calc(100% - 86px)!important}
+  .brand-name{font-size:25px}
+}
