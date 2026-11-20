@@ -1,0 +1,12 @@
+MERİTAY BOTANİK · MOBİL VİTRİN V4 · 20.11.2026
+
+1. Dosyaları GitHub Pages yayın köküne (index.html, CNAME, assets klasörü aynı seviyede) yükleyin.
+2. Google Ads [çiçekçi] anahtar kelimesinin nihai URL’sini https://cicekci.site/cicekci.html olarak KORUYUN.
+3. Diğer reklam sayfalarının nihai URL’leri olduğu gibi kalabilir; hepsi yeni tasarıma dönüştürüldü.
+4. Ürün görselleri mevcut arşivden alınmıştır ve sitede temsili olarak belirtilir; gerçek fiyat ve stok uydurulmadı.
+5. Dönüşüm kimlikleri G-93SH8FZ00H ve AW-17558342041 / telefon dönüşüm kaynağı korunmuştur. Geliştirilmiş ölçüm gerçek çağrıyı değil buton tıklamasını kaydeder; Ads dönüşüm oluşturma testi gereklidir.
+6. Gelen siparişler otomatik ödeme değil WhatsApp teklif talebidir. Form canlı WhatsApp bağlantısı oluşturur.
+7. Yayına alınca masaüstü+mobilde güncel önbelleği temizleyip görünümü ve WhatsApp/tel bağlantılarını kontrol edin.
+8. 2/10 kalite puanının yükselmesi garanti değildir; Google’ın beklenen TO, reklam alaka düzeyi ve açılış sayfası deneyimi bileşenlerini yeni trafiğe göre izleyin.
+9. Google Ads kampanya metinlerini ve reklam gruplarını ayrıca yönetmek gerekir; bu ZIP Google Ads hesabında değişiklik yapmaz.
+10. Bu sürümde ödeme/sepet sistemi yoktur, olmadığı halde var gibi gösterilmez.

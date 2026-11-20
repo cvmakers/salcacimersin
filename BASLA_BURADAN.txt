@@ -1,0 +1,22 @@
+MERİTAY BOTANİK • PROFESYONEL VİTRİN v4
+
+KULLANIM
+1) ZIP içindeki DOSYALARI (üst klasör eklemeden) GitHub Pages kök dizinine yükleyin.
+2) Mevcut site dosyalarını önce yedekleyin.
+3) Ana sayfayı /, reklam açılış sayfasını /cicekci.html adresinde kontrol edin.
+4) Google Ads [çiçekçi] anahtar kelimesinin nihai URL'si https://cicekci.site/cicekci.html olarak kalmalı.
+5) Güncel fiyat/stok olmadığı için ürünlerde fiyat yazmıyor; görseller temsili olarak etiketli.
+6) WhatsApp formu ödeme almaz, mağazaya sipariş bilgi talebi yollar.
+7) GA4 (G-93SH8FZ00H) ve Google Ads (AW-17558342041) site.js içinde korundu; dönüşüm tıklamalarını Ads/Tag Assistant ile ayrıca test edin.
+8) Bu ZIP Google Ads hesabında veya canlı sitede otomatik bir değişiklik yapmaz.
+9) Özellikle görselleri ve gerçek fiyatları mağaza onayıyla güncelleyin; farklı ürünlerin aynı görselle temsil edildiği kategori kısayollarını ürün fotoğraflarıyla zenginleştirin.
+
+DAHİL OLANLAR
+- Ana sayfa + 8 SEO/reklam sayfasında yeni mobil vitrin tasarımı
+- Ürün arama, kategori filtreleme ve erişilebilir mobil menü
+- Güncel fiyat soran WhatsApp ürün kartları, sipariş bilgi formu
+- Sabit mobil telefon/WhatsApp/konum menüsü
+- robots.txt, sitemap.xml, canonical/OG etiketleri ve yerel işletme verileri
+- Eski CNAME, gizlilik politikası ve tüm mevcut ölçüm scriptleri
+
+NOT: Tasarımın iyi olması 2/10 kalite puanını tek başına garanti biçiminde yükseltmez. Reklam metni, beklenen CTR ve Google'ın açılış sayfası deneyimi ayrıca izlenmelidir.
