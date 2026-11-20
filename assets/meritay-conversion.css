@@ -1,0 +1,39 @@
+/* Meritay Botanik | Conversion-ready fast enquiry components | 2026-11-20 */
+:root{--form-green:#163e31;--form-green2:#245b42;--form-line:#d9e5db;--form-cream:#f5f8f4}
+*,*:before,*:after{box-sizing:border-box}
+.fast-order{padding:36px 0 52px;background:linear-gradient(145deg,#eff6ee,#fffaf6);border-block:1px solid #dbe7da}
+.fast-order .wrap{width:min(calc(100% - 40px),1140px);margin:auto}
+.fast-order-inner{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);align-items:center;gap:clamp(22px,4vw,62px)}
+.fast-order-kicker{color:#8e3454;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:9px}
+.fast-order h2{font-size:clamp(27px,3.4vw,41px);line-height:1.15;margin:0 0 12px;color:#163e31;letter-spacing:-.035em}
+.fast-order p{margin:0 0 13px;color:#466554;line-height:1.65;font-size:15px}
+.fast-order-help{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:8px;color:#264e38;font-weight:650;font-size:14px}
+.fast-order-help li:before{content:'✓';margin-right:9px;color:#148a59;font-weight:900}
+.enquiry-card{background:#fff;border:1px solid #d8e5d9;border-radius:20px;padding:clamp(18px,3vw,29px);box-shadow:0 15px 40px rgba(22,57,38,.065);min-width:0}
+.enquiry-card h3{font-size:19px;color:#163b2d;margin:0 0 5px}.enquiry-card>p{font-size:13px;margin-bottom:17px}
+.enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.enquiry-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.enquiry-field label{font-size:12px;font-weight:750;color:#324d3e}
+.enquiry-field select,.enquiry-field input,.enquiry-field textarea{appearance:auto;background:#fff;color:#23392d;width:100%;border:1px solid #cadbcf;border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;min-height:46px}
+.enquiry-field textarea{resize:vertical;min-height:72px;max-height:160px;line-height:1.4}
+.enquiry-field select:focus-visible,.enquiry-field input:focus-visible,.enquiry-field textarea:focus-visible{outline:3px solid #a7d1b7;outline-offset:1px;border-color:#447d5e}
+.enquiry-field.full{grid-column:1/-1}
+.enquiry-submit{grid-column:1/-1;display:block;text-align:center;border:0;background:var(--form-green);color:#fff;border-radius:11px;min-height:53px;font:800 15px system-ui,-apple-system,'Segoe UI',sans-serif;cursor:pointer;padding:12px 15px}
+.enquiry-submit:hover{background:var(--form-green2)}.enquiry-note{font-size:12px!important;line-height:1.5!important;margin:0!important;grid-column:1/-1}
+.product-help{font-size:12px!important;color:#506a59!important;margin-top:8px!important}
+.mobile-quickbar{display:none}
+.page .fast-order{padding:23px 0;border-radius:16px;text-align:left;margin-top:28px}
+.page .fast-order-inner{display:block}.page .fast-order h2{font-size:25px}.page .fast-order .wrap{width:min(100% - 30px,850px)}
+.page .enquiry-card{margin-top:16px}
+@media(max-width:760px){
+.fast-order{padding:30px 0}.fast-order-inner{grid-template-columns:minmax(0,1fr);gap:18px}
+.fast-order .wrap{width:min(calc(100% - 30px),560px)}
+.fast-order h2{font-size:29px}.enquiry-card{padding:17px;border-radius:14px}
+body{padding-bottom:69px!important}
+.mobile-quickbar{display:grid;grid-template-columns:1fr 1.24fr;gap:9px;position:fixed;bottom:0;left:0;right:0;z-index:65;background:#fff;border-top:1px solid #d7e5da;padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));box-shadow:0 -8px 22px rgba(19,60,39,.1)}
+.mobile-quickbar a{display:flex;justify-content:center;align-items:center;text-align:center;border-radius:10px;min-height:44px;text-decoration:none;font:800 13px system-ui,sans-serif;background:#f1f7f1;color:#164b32;border:1px solid #d6e4d8}
+.mobile-quickbar a:last-child{background:#184a35;color:#fff;border-color:#184a35}
+.consent-panel{bottom:calc(77px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:420px){.enquiry-form{grid-template-columns:1fr}.enquiry-field.full,.enquiry-submit,.enquiry-note{grid-column:1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}

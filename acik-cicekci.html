@@ -213,10 +213,10 @@
     .landing-links a:focus-visible { outline: 3px solid var(--rose); outline-offset: 3px; }
     @media(max-width:800px) { .intent-cards { grid-template-columns: 1fr; } }
   </style>
-<link href="/assets/ads-landing.css" rel="stylesheet"/><link href="/assets/meritay-redesign.css?v=2" rel="stylesheet"/></head>
+<link href="/assets/ads-landing.css" rel="stylesheet"/><link href="/assets/meritay-redesign.css?v=2" rel="stylesheet"/><link href="/assets/meritay-conversion.css?v=3" rel="stylesheet"/><script defer="" src="/assets/meritay-conversion.js?v=3"></script></head>
 <body data-page="ads-acik-cicekci">
 <a class="skip" href="#icerik">İçeriğe geç</a>
-<div class="topbar">Mersin Yenişehir · 7/24 açık çiçekçi · 15 km çevreye teslimat</div>
+<div class="topbar">Mersin Yenişehir · telefon ve WhatsApp · 15 km çevreye teslimat</div>
 <header class="header">
 <div class="wrap header-inner">
 <a aria-label="Meritay Botanik ana sayfa" class="brand" href="/">
@@ -241,7 +241,6 @@
 <div class="cta-row">
 <a class="button primary btn-order" href="https://wa.me/905425716844?text=Merhaba%2C%20Mersin%20%C3%87i%C3%A7ek%C3%A7i%20hakk%C4%B1nda%20bilgi%20almak%20ve%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20vermek%20istiyorum.%20Teslimat%20adresi%3A%20">WhatsApp’tan Sipariş</a>
 <a class="button secondary btn-call" href="tel:+905425716844">Hemen Ara</a>
-
 </div>
 <div aria-label="Meritay Botanik hizmet bilgileri" class="quick-facts"><span>7/24 iletişim</span><span>Menteş’te mağaza</span><span>15 km çevreye teslimat</span></div><a class="explore-link" href="#cicekler">Çiçek çeşitlerini incele  →</a><p class="hero-note">7/24 iletişim bilgisi vardır. Gece teslimatı ve stok uygunluğu sipariş öncesi teyit edilir.</p>
 </div>
@@ -253,7 +252,22 @@
 <address class="panel-address">Menteş Mahallesi, 9. Cadde No:30<br/>Yenişehir / Mersin</address>
 </div></aside>
 </div>
-</section>
+</section><section aria-labelledby="fast-order-heading" class="fast-order" id="hizli-siparis">
+<div class="wrap fast-order-inner">
+<div class="fast-order-copy"><span class="fast-order-kicker">Hızlı çiçek siparişi</span>
+<h2 id="fast-order-heading">Çiçeğini seç, bütçeni belirt, teklif iste</h2>
+<p>Fiyatı tahmin etmene gerek yok. Çiçek türünü ve teslimat bölgesini seç; mağazamız stok, toplam tutar ve teslimat zamanını seninle teyit etsin.</p>
+<ul class="fast-order-help"><li>Menteş, Yenişehir’de fiziki mağaza</li><li>15 km çevre için adres bazlı teslimat kontrolü</li><li>Telefon veya WhatsApp ile doğrudan iletişim</li></ul></div>
+<div class="enquiry-card"><h3>Sipariş bilgilerini hazırla</h3><p>Form sipariş oluşturmaz; WhatsApp’ta bilgi talebi açar.</p>
+<form class="enquiry-form" data-meritay-enquiry="">
+<div class="enquiry-field"><label for="meritay-flower">Çiçek türü</label><select id="meritay-flower" name="flower" required=""><option value="">Çiçek seçin</option><option>Gül buketi</option><option>Orkide</option><option>Lilyum / mevsim buketi</option><option>Çelenk</option><option>Özel gün aranjmanı</option><option>Kararsızım, öneri istiyorum</option></select></div>
+<div class="enquiry-field"><label for="meritay-budget">Bütçe tercihi</label><select id="meritay-budget" name="budget" required=""><option value="">Bütçe seçin</option><option>1.000 TL altı</option><option>1.000–2.000 TL</option><option>2.000–3.500 TL</option><option>3.500 TL üzeri</option><option>Fiyat önerisi istiyorum</option></select></div>
+<div class="enquiry-field"><label for="meritay-area">Teslimat bölgesi</label><select id="meritay-area" name="area" required=""><option value="">Bölge seçin</option><option>Menteş / Yenişehir</option><option>Pozcu</option><option>Mezitli</option><option>Akdeniz</option><option>Toroslar</option><option>Mağazadan teslim almak istiyorum</option><option>Diğer / uygunluğu soracağım</option></select></div>
+<div class="enquiry-field"><label for="meritay-when">Tercih edilen gün (isteğe bağlı)</label><input id="meritay-when" name="when" type="date"/></div>
+<div class="enquiry-field full"><label for="meritay-note">Çiçek notu (isteğe bağlı)</label><textarea id="meritay-note" maxlength="350" name="note" placeholder="Renk, adet veya tercih ettiğiniz teslimat saati..." rows="2"></textarea></div>
+<button class="enquiry-submit" type="submit">WhatsApp’tan stok ve fiyat sor →</button>
+<p class="enquiry-note">Görseller örnektir; ürün bulunurluğu ve fiyat kesinleşmeden ödeme veya teslimat garantisi verilmez.</p>
+</form></div></div></section>
 <div aria-label="Mağaza bilgileri" class="proof">
 <div class="wrap proof-grid">
 <div class="proof-item"><strong>Fiziki çiçekçi mağazası</strong><span>Menteş Mahallesi, Yenişehir</span></div>
@@ -329,6 +343,5 @@
 <footer>
 <div class="wrap footer-inner"><span>© 2026 Meritay Botanik · Menteş Mahallesi, 9. Cadde No:30, Yenişehir / Mersin</span><span><a href="tel:+905425716844">0542 571 68 44</a> · <a href="/gizlilik-politikasi.html">Gizlilik ve çerezler</a></span></div>
 </footer>
-
-</body>
+<nav aria-label="Mobil hızlı iletişim" class="mobile-quickbar"><a class="btn-call" href="tel:+905425716844">☎ Hemen Ara</a><a class="btn-order" href="https://wa.me/905425716844?text=Merhaba%20Meritay%20Botanik%2C%20%C3%A7i%C3%A7ek%20sipari%C5%9Fi%20i%C3%A7in%20stok%20ve%20fiyat%20bilgisi%20istiyorum.">WhatsApp’tan Sipariş</a></nav></body>
 </html>

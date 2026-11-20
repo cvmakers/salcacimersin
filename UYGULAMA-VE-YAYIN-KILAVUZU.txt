@@ -1,0 +1,53 @@
+MERİTAY BOTANİK — KALİTE PUANI / AÇILIŞ SAYFASI İYİLEŞTİRMESİ
+20 Kasım 2026 | Yayınlanmaya hazır dosya değişiklikleri, CANLI YAYIN VE GOOGLE ADS DEĞİŞİKLİĞİ DEĞİLDİR.
+
+DOĞRULANAN ADS VERİLERİ (açık Google Ads sekmesi, 13–19 Kasım 2026):
+- [çiçekçi]: 2/10, 39 tıklama, 784 gösterim, CTR %4,97, ort. TBM 28,64 TL.
+- Beklenen TO: Ortalamanın altında. Açılış sayfası: Ortalamanın altında. Reklam alaka düzeyi: Ortalama.
+- Listelenen diğer 7 kelimede de açılış sayfası deneyimi ortalamanın altında.
+- İyi örnek: "mersin çiçekçi" 6/10 (CTR %8,77); "mersin çiçek siparişi" 6/10.
+- Google Ads kampanya: 22.09.2026, görünen günlük bütçe 500 TL; teklif stratejisi Tıklama sayısını en üst düzeye çıkarma.
+
+YAPILANLAR (DOSYADA):
+1) /cicekci.html: genel [çiçekçi] için ayrı, orijinal, mobil uyumlu açılış sayfası; özel meta, schema.org/Florist, yerel mağaza bilgisi, ürün örnekleri ve FAQ.
+2) Ana sayfa, Yenişehir, Pozcu, Mersin sipariş, açık çiçekçi ve yardımcı sayfalara hızlı WhatsApp sipariş bilgi formu eklendi.
+3) /assets/meritay-conversion.css + JS: cihaz uyumlu form, bütçe/ürün/bölge/tarih seçimi, WhatsApp'a hazır mesaj, mobil alt çağrı paneli.
+4) Hızlı sipariş formu ASLA ödeme/satış veya kesin sipariş olayı olarak raporlanmıyor. Teklif formu ve WhatsApp tıklaması ölçümü ayrıdır.
+5) Mevcut GA4 (G-93SH8FZ00H), Google Ads (AW-17558342041), arama dönüşümü etiketi ve çerez tercihleri korunmuştur.
+6) Sitemap güncellendi; marka/site adresi ve mevcut diğer sayfalar korundu.
+7) Google Ads: mevcut 8 kelimeyi farklı niyet gruplarına taşıma planı CSV, 15 başlık/4 açıklamalı 8 RSA taslağı, site bağlantıları ve rapordan negatif liste hazırlandı.
+8) Yanlış 24 saat FİZİKİ MAĞAZA açık iddiası azaltıldı; gerçek çalışma saatleri mutlaka işletmeden doğrulanmalı.
+
+ÖNEMLİ EKSİK / GERÇEK DURUM:
+- Ürün görselleri TEMSİLİ ve fiyat verilmedi, çünkü gerçek stok ve fiyat listesi sağlanmadı. Uydurma fiyat kullanılmadı.
+- Google Ads kalitesi için gerçek mağaza/ürün fotoğrafları, gerçek ürün isimleri ve doğrulanmış fiyatlar eklendiğinde site daha yararlı olur.
+- Google Ads hesabına yazma erişimi yok. CSV'ler kullanıcı incelemesi sonrası Ads Editor ile uygulanır.
+- Web sitesi GitHub Pages / statik alan adı olarak görünüyor: ZIP'in içeriğini yayınlamadık.
+- Dönüşüm sayısı gerçek telefon konuşması veya satış demek değildir. GA4, GTM/Ads ve Google Tag Assistant ile canlı olarak test edilmelidir.
+- Kalite puanı Google tarafından hesaplanır. 10/10, ilk sırada görünme veya düşük TBM garantisi verilemez.
+
+YAYINLAMA:
+A) cicekci.site mevcut GitHub Pages reposunda bütün dosyalar için yedek alın.
+B) BU ZIP'İ AÇIN; index.html ve CNAME dosyalarını repo köküne yükleyin (üst klasör yok).
+C) .github, assets, diğer *.html ve haluk-dindar mevcut klasörleri korunmuştur. Gereksiz .git nesneleri paketten çıkarılmıştır.
+D) HTTPS üzerinden /cicekci.html ve /assets/meritay-conversion.js, /assets/meritay-conversion.css sayfalarının 200 dönmesini kontrol edin.
+E) Mobil 360px, 390px ve masaüstü görüntüsünü, tüm tel/WhatsApp linklerini test edin.
+F) GA4 DebugView üzerinde WhatsApp butonunda whatsapp_tiklama, formda teklif_formu_whatsapp_acilis olaylarını kontrol edin.
+G) Search Console'da sitemap.xml gönderin. Yeni sayfa indexlenmesini bir gecede garanti etmeyin.
+H) Google Ads'te [çiçekçi] için final URL'yi SADECE sayfa canlı ve test edildikten sonra https://cicekci.site/cicekci.html yapın.
+I) Diğer anahtar kelimeleri ilgili reklam gruplarına TAŞIYIN; eski grupta kopyalarını bırakmayın. İki grupta aynı keywordü aynı anda aktifleştirmeyin.
+J) RSA metinleri yeni reklam varyasyonu olarak uygulanabilir; 8 reklam grubu/8 keyword taslağı durumundadır; Google Ads Editor'a toplu içe aktarma alan eşlemesi gerekebilir.
+K) Günlük 500 TL bütçe ve mevcut tıklama odaklı teklif stratejisine dokunmayın. İlk gün agresif teklif artırımı yapmayın.
+L) 14-30 günlük eğilimi, KALİTE BİLEŞENLERİNİ, CTR ve dönüşüm kalitesini ölçün.
+
+İHTİYAÇ OLAN İŞLETME DOĞRULAMALARI:
+- Mağazanın fiili açık olduğu saatler ve 7/24 telefona cevap verilip verilmediği.
+- Güncel en az 8–12 gerçek stok ürünü, gerçek fotoğrafları ve fiyatları.
+- Stok/kurye kapasitesi, gerçek teslimat çevresi ve Google İşletme Profili bağlı hesap durumu.
+- Google Ads dönüşüm işaretleri, birincil / ikincil hedeflerin aktif durumu.
+
+DOSYALAR:
+GOOGLE_ADS_ANAHTAR_KELIME_PLANI.csv: 8 keyword, mevcut kampanyada taşıma planı
+GOOGLE_ADS_RSA_METINLERI.csv: her grup için 15 başlık + 4 açıklama
+GOOGLE_ADS_SITE_BAGLANTILARI.csv: 6 site bağlantısı
+GOOGLE_ADS_NEGATIFLER_RAPORDAN.txt: sadece gönderilen raporda görülen terimler

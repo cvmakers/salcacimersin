@@ -1,15 +1,9 @@
-﻿Campaign,Ad group,Keyword,Match type,Landing page
-22.09.2026,MERSIN_CICEKCI,[mersin çiçekçi],Exact,https://cicekci.site/
-22.09.2026,MERSIN_CICEKCI,"""mersin çiçekçi""",Phrase,https://cicekci.site/
-22.09.2026,YENISEHIR_CICEKCI,[yenişehir çiçekçi],Exact,https://cicekci.site/mersin-yenisehir-cicekci.html
-22.09.2026,YENISEHIR_CICEKCI,"""yenişehir çiçekçi""",Phrase,https://cicekci.site/mersin-yenisehir-cicekci.html
-22.09.2026,YENISEHIR_CICEKCI,[mersin yenişehir çiçekçi],Exact,https://cicekci.site/mersin-yenisehir-cicekci.html
-22.09.2026,POZCU_CICEKCI,[pozcu çiçekçi],Exact,https://cicekci.site/pozcu-cicekci.html
-22.09.2026,POZCU_CICEKCI,"""pozcu çiçekçi""",Phrase,https://cicekci.site/pozcu-cicekci.html
-22.09.2026,MERSIN_SIPARIS,[mersin çiçek siparişi],Exact,https://cicekci.site/mersin-cicek-siparisi.html
-22.09.2026,MERSIN_SIPARIS,"""mersin çiçek siparişi""",Phrase,https://cicekci.site/mersin-cicek-siparisi.html
-22.09.2026,EN_YAKIN_CICEKCI,[en yakın çiçekçi],Exact,https://cicekci.site/en-yakin-cicekci.html
-22.09.2026,EN_YAKIN_CICEKCI,"""en yakın çiçekçi""",Phrase,https://cicekci.site/en-yakin-cicekci.html
-22.09.2026,ACIK_CICEKCI,[açık çiçekçi],Exact,https://cicekci.site/acik-cicekci.html
-22.09.2026,ACIK_CICEKCI,"""açık çiçekçi""",Phrase,https://cicekci.site/acik-cicekci.html
-22.09.2026,CICEKCI_GENEL_TEST,[çiçekçi],Exact,https://cicekci.site/
+﻿Campaign,Ad group,Keyword,Match type,Final URL,Current campaign change
+22.09.2026,CICEKCI_GENEL,[çiçekçi],Exact,https://cicekci.site/cicekci.html,MOVE existing keyword (do not duplicate)
+22.09.2026,MERSIN_CICEKCI,"""mersin çiçekçi""",Phrase,https://cicekci.site/,MOVE existing keyword (do not duplicate)
+22.09.2026,MERSIN_SIPARIS,"""mersin çiçek siparişi""",Phrase,https://cicekci.site/mersin-cicek-siparisi.html,MOVE existing keyword (do not duplicate)
+22.09.2026,EN_YAKIN_CICEKCI,[en yakın çiçekçi],Exact,https://cicekci.site/en-yakin-cicekci.html,MOVE existing keyword (do not duplicate)
+22.09.2026,POZCU_CICEKCI,"""pozcu çiçekçi""",Phrase,https://cicekci.site/pozcu-cicekci.html,MOVE existing keyword (do not duplicate)
+22.09.2026,YENISEHIR_CICEKCI,"""yenişehir çiçekçi""",Phrase,https://cicekci.site/mersin-yenisehir-cicekci.html,MOVE existing keyword (do not duplicate)
+22.09.2026,MERSIN_YENISEHIR_CICEKCI,"""mersin yenişehir çiçekçi""",Phrase,https://cicekci.site/mersin-yenisehir-cicekci.html,MOVE existing keyword (do not duplicate)
+22.09.2026,ACIK_CICEKCI,[açık çiçekçi],Exact,https://cicekci.site/acik-cicekci.html,MOVE existing keyword (do not duplicate)
